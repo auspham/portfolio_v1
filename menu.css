@@ -1,0 +1,21 @@
+.menu{
+    position: fixed;
+    margin-top: 5em;
+    text-align: center;
+}
+
+.menu:before, .menu:after{
+    width: 1px;
+    height: 25em;
+    background: #000;
+    content: "";
+    display: block;
+    margin-left: 1.5em;
+}
+.menu:after{
+    margin-top: 1em;
+}
+
+.menu:before{
+    margin-bottom: 1em;
+}
