@@ -1,0 +1,44 @@
+canvas{
+    position: fixed;
+    z-index: -1;
+}
+
+.nav-socialmedia{
+    margin-top: 5em;
+    float: right;
+}
+
+.nav-socialmedia div {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+}
+
+.nav-socialmedia i{
+    font-size: 3em;
+    opacity:0.9;
+    margin-right: .1em;
+}
+
+.nav-socialmedia i:hover{
+    opacity:1;
+    cursor: pointer;
+}
+
+button.btn-contact{
+    border: 2px solid #000;
+    margin-top: -1.7em;
+    height: 2.6em;
+    opacity:0.9;
+}
+
+button.btn-contact:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+button.btn-contact:focus, button.btn-contact:active{
+    outline: none;
+    box-shadow: none;
+}
