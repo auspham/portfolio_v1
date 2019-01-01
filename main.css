@@ -7,7 +7,11 @@ canvas{
     margin-top: 5em;
     float: right;
 }
-
+.nav-socialmedia::after{
+    content: "";
+    display: block;
+    clear:both;
+}
 .nav-socialmedia div {
     width: 45px;
     height: 45px;
