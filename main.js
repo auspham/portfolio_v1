@@ -30,10 +30,10 @@ function Shape(x,y,dy,radius){
       }
 
       if(shape == 2) {
-          c.moveTo(this.x + 5, this.y);
-          c.lineTo(this.x, this.y + 10);
-          c.lineTo(this.x + 10, this.y + 10);
-          c.lineTo(this.x + 5, this.y);
+          c.moveTo(this.x + this.radius-1, this.y);
+          c.lineTo(this.x, this.y + (this.radius-1) * 2);
+          c.lineTo(this.x + (this.radius-1) * 2, this.y + (this.radius-1) * 2);
+          c.lineTo(this.x + (this.radius-1), this.y);
           c.stroke();
 
       }
