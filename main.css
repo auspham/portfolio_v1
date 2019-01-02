@@ -2,9 +2,10 @@ canvas{
     position: fixed;
     z-index: -1;
 }
-
-.nav-socialmedia{
+.container{
     margin-top: 5em;
+}
+.nav-socialmedia{
     float: right;
 }
 .nav-socialmedia::after{
@@ -66,8 +67,8 @@ button.btn-contact:focus, button.btn-contact:active{
 
 .main{
     background: url('./assets/self.svg') no-repeat red;
-    width: 500px;
-    margin-top: 15em;
+    width: 1000px;
     height: 500px;
     display: block;
+    margin: 0 auto;
 }
