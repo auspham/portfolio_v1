@@ -15,12 +15,12 @@ function Shape(x,y,dy,radius){
     this.dy = dy;
     this.radius = radius;
     this.color = "#000";
-    var shape = Math.floor(Math.random() * Math.floor(3));
+    var shape = Math.floor(Math.random() * Math.floor(5));
     this.render = function () {
       c.beginPath();
       if(shape == 0) {
           // circle
-          c.arc(this.x,this.y,this.radius,0,Math.PI*2,false);
+          c.arc(this.x,this.y,this.radius*1.1,0,Math.PI*2,false);
           c.fillStyle = this.color;
           c.stroke();
       }
@@ -35,11 +35,31 @@ function Shape(x,y,dy,radius){
           c.lineTo(this.x + (this.radius-1) * 2, this.y + (this.radius-1) * 2);
           c.lineTo(this.x + (this.radius-1), this.y);
           c.stroke();
-
       }
 
-      // c.lineWidth = 5;
-      // c.stroke();
+      if(shape == 3) {
+          c.lineTo(this.x + this.radius-1, this.y);
+          c.lineTo(this.x + (this.radius-1)/2, this.y + this.radius - 1);
+          c.lineTo(this.x,this.y);
+          c.lineTo(this.x + this.radius-1, this.y);
+          c.stroke();
+      }
+
+      if(shape == 4) {
+          var a = this.radius*1;
+          c.moveTo(this.x, this.y);
+          c.lineTo(this.x + a, this.y);
+          c.lineTo(this.x, this.y + a);
+          c.lineTo(this.x - (a), this.y + a);
+          c.lineTo(this.x,this.y);
+          c.stroke();
+        //   c.moveTo(this.x+2, this.y+2);
+        //   c.lineTo(this.x+2, this.y+2 + a);
+        //   c.lineTo(this.x+2 + a, this.y+2 + 2*a);
+        //   c.lineTo(this.x+2 + a, this.y+2 + a);
+        //   c.lineTo(this.x+2, this.y+2);
+        //   c.stroke();
+      }
       this.move();
     }
     this.move = function() {
@@ -56,7 +76,7 @@ function init() {
         var x = Math.random()*innerWidth;
         var y = Math.random()*innerHeight;
         var dy = (Math.random()) * MAXSPEED + MINSPEED;
-        var radius = (Math.random() * 10) + 5; 
+        var radius = (Math.random() * 10) + 10; 
         var shape = new Shape(x,y,dy,radius);
         shapeArr.unshift(shape);
     }
