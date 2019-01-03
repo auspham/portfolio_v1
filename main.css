@@ -100,8 +100,7 @@ button.btn-contact:focus, button.btn-contact:active{
     white-space: nowrap; /* Keeps the content on a single line */
     font-weight: 300;
     animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    typing 3.5s steps(40, end);
 }
 
 .main div.intro-main p span {
