@@ -5,6 +5,11 @@ canvas{
 .container{
     margin-top: 5em;
 }
+.top-nav{
+    display:block;
+    width: 100%;
+    overflow: hidden;
+}
 .nav-socialmedia{
     float: right;
 }
@@ -66,9 +71,36 @@ button.btn-contact:focus, button.btn-contact:active{
 }
 
 .main{
-    background: url('./assets/self.svg') no-repeat red;
-    width: 1000px;
-    height: 500px;
+    background: url(./assets/self.png) no-repeat;
+    width: 1400px;
+    height: 600px;
     display: block;
-    margin: 0 auto;
+    margin: 5em auto;
+    background-size: 500px;
+}
+
+.main div.intro-main{
+    width: 500px;
+    float: right;
+    margin: 4em 6em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+}
+
+.main div.intro-main p{
+    font-weight: 300;
+}
+
+.main div.intro-main p:nth-child(2) span {
+    font-weight: 400;
+}
+
+.main-bot {
+    background: url(./assets/bg-bot.svg) no-repeat;
+    width: 700px;
+    height: 500px;
+    position: fixed;
+    bottom: -9em;
+    background-size: 800px;
+    right: -1em;
 }
