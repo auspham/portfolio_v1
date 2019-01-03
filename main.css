@@ -108,6 +108,7 @@ button.btn-contact:focus, button.btn-contact:active{
 }
 .main div.intro-main p span.big {
     font-weight: 800;
+    color: #F55F44;
 }
 .main-bot {
     background: url(./assets/bg-bot.svg) no-repeat;
