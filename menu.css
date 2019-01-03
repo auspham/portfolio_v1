@@ -5,7 +5,16 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
+.menu svg{
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
 
+}
+
+.menu span{
+    margin-top: 1px;
+}
 .menu:before, .menu:after{
     width: 1px;
     height: 25em;
