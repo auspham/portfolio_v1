@@ -72,17 +72,17 @@ button.btn-contact:focus, button.btn-contact:active{
 
 .main{
     background: url(./assets/self.png) no-repeat;
-    width: 1100px;
-    height: 600px;
+    width: 1310px;
+    height: 698px;
     display: block;
-    margin: 5em auto;
-    background-size: 500px;
+    margin: 0 auto;
+    background-size: 607px;
 }
 
 .main div.intro-main{
     width: 500px;
     float: right;
-    margin: 4em 1em;
+    margin: 5em 3em;
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
 }
@@ -106,25 +106,27 @@ button.btn-contact:focus, button.btn-contact:active{
 .main div.intro-main p span {
     font-weight: 400;
 }
-
+.main div.intro-main p span.big {
+    font-weight: 800;
+}
 .main-bot {
     background: url(./assets/bg-bot.svg) no-repeat;
     width: 700px;
     height: 500px;
     position: fixed;
-    bottom: -16em;
-    background-size: 540px;
-    right: -13em;
+    bottom: -8em;
+    background-size: 750px;
+    right: -4em;
 }
 @keyframes bounce{
     0%{
-        margin: -12em 7em;
+        margin: -4em 15em;
         }
     50%{
-        margin: -14em 7em;
+        margin: -6em 15em;
         }
     100%{
-        margin: -12em 7em;
+        margin: -4em 15em;
         }
 }
 
@@ -132,7 +134,7 @@ button.btn-contact:focus, button.btn-contact:active{
     background: url(./assets/rocket.svg) no-repeat;
     width: 200px;
     height: 500px;
-    background-size: 170px;
-    margin: -12em 7em;
+    background-size: 197px;
+    margin: -4em 15em;
     animation: bounce 3s infinite 0s linear;
 }

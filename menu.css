@@ -2,6 +2,8 @@
     position: fixed;
     top: 5em;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 .menu:before, .menu:after{

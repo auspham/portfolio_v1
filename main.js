@@ -15,7 +15,7 @@ function Shape(x,y,dy,radius){
     this.dy = dy;
     this.radius = radius;
     this.color = "#000";
-    var shape = Math.floor(Math.random() * Math.floor(5));
+    var shape = Math.floor(Math.random() * Math.floor(4));
     this.render = function () {
       c.beginPath();
       if(shape == 0) {
@@ -45,21 +45,21 @@ function Shape(x,y,dy,radius){
           c.stroke();
       }
 
-      if(shape == 4) {
-          var a = this.radius*1;
-          c.moveTo(this.x, this.y);
-          c.lineTo(this.x + a, this.y);
-          c.lineTo(this.x, this.y + a);
-          c.lineTo(this.x - (a), this.y + a);
-          c.lineTo(this.x,this.y);
-          c.stroke();
-        //   c.moveTo(this.x+2, this.y+2);
-        //   c.lineTo(this.x+2, this.y+2 + a);
-        //   c.lineTo(this.x+2 + a, this.y+2 + 2*a);
-        //   c.lineTo(this.x+2 + a, this.y+2 + a);
-        //   c.lineTo(this.x+2, this.y+2);
-        //   c.stroke();
-      }
+    //   if(shape == 4) {
+    //       var a = this.radius*1;
+    //       c.moveTo(this.x, this.y);
+    //       c.lineTo(this.x + a, this.y);
+    //       c.lineTo(this.x, this.y + a);
+    //       c.lineTo(this.x - (a), this.y + a);
+    //       c.lineTo(this.x,this.y);
+    //       c.stroke();
+    //     //   c.moveTo(this.x+2, this.y+2);
+    //     //   c.lineTo(this.x+2, this.y+2 + a);
+    //     //   c.lineTo(this.x+2 + a, this.y+2 + 2*a);
+    //     //   c.lineTo(this.x+2 + a, this.y+2 + a);
+    //     //   c.lineTo(this.x+2, this.y+2);
+    //     //   c.stroke();
+    //   }
       this.move();
     }
     this.move = function() {
