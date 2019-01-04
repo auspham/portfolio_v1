@@ -1,0 +1,30 @@
+.right-scroll{
+    position: fixed;
+    right: 8em;
+    top: 38%;
+}
+
+.small{
+    width: 25px;
+    height: 25px;
+    background: #000;
+    border-radius: 100%;
+    margin-bottom: 1em;
+    border: 2px solid #000;
+}
+
+.small::after{
+    content: "";
+    border: 2px solid #000;
+    width: 35px; height: 35px;
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    margin: -7px;
+}
+
+.active{
+    background: #fff;
+    border: 2px solid #000;
+
+}
