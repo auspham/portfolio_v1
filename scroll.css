@@ -1,6 +1,10 @@
-.H, .e, .l, .l1, .o, .comma{
+.H, .e, .l, .l1, .o, .comma, .A, .u, .t, .i{
     display: inline-block;
 }
-div.intro-main div:not(:first-child) {
+div.intro-main div:not(.H) {
     margin-left: -16px;
+}
+div.name{
+    display: inline-block;
+    margin-left: 12px!important;
 }

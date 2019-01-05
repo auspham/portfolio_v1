@@ -4,7 +4,12 @@ function scrollAnimate() {
     $(".e").css("transform", "translateY(-"+$(window).scrollTop()*.9+"px)");
     $(".l").css("transform", "translateY(-"+$(window).scrollTop()*.7+"px)");
     $(".l1").css("transform", "translateY(-"+$(window).scrollTop()*.9+"px)");
-    $(".o").css("transform", "translateY(-"+$(window).scrollTop()*.6+"px)");
+    $(".o").css("transform", "translateY(-"+$(window).scrollTop()*1.2+"px)");
     $(".comma").css("transform", "translateY(-"+$(window).scrollTop()*.9+"px)");
+    $(".A").css("transform", "translateY(-"+$(window).scrollTop()*.9+"px)");
+    $(".u").css("transform", "translateY(-"+$(window).scrollTop()*1+"px)");
+    $(".t").css("transform", "translateY(-"+$(window).scrollTop()*1.1+"px)");
+    $(".i").css("transform", "translateY(-"+$(window).scrollTop()*.75+"px)");
+
 
 }

@@ -112,10 +112,10 @@ button.btn-contact:focus, button.btn-contact:active{
     animation: typing 3.5s steps(40) forwards;
 }
 
-.main div.intro-main .typing span.name {
+.main div.intro-main .typing div.name {
     font-weight: 400;
 }
-.main div.intro-main .typing span.big {
+.main div.intro-main .typing div.big {
     font-weight: 800;
     color: #F55F44;
 }
