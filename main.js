@@ -65,7 +65,7 @@ function Shape(x,y,dy,radius){
     this.move = function() {
         if(this.y > fullheigh) {
             this.y = 0;
-            this.x += 1
+            this.x = Math.random()*innerWidth;
         }
         this.y += this.dy;
     }
