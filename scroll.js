@@ -10,6 +10,13 @@ function scrollAnimate() {
     $(".u").css("transform", "translateY(-"+$(window).scrollTop()*1+"px)");
     $(".t").css("transform", "translateY(-"+$(window).scrollTop()*1.1+"px)");
     $(".i").css("transform", "translateY(-"+$(window).scrollTop()*.75+"px)");
+    $(".rocket").css("transform", "translateY(-"+$(window).scrollTop()*2+"px)");
+    universeScale();
+}
 
-
+function universeScale() {
+    let value = $(window).scrollTop()*0.01;
+    if(value >= 1) {
+        $(".universe").css("transform", "scale(" + value + ")");
+    }
 }

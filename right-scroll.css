@@ -2,6 +2,7 @@
     position: fixed;
     right: 8em;
     top: 38%;
+    z-index: 2;
 }
 
 .small{

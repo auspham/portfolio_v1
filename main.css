@@ -120,13 +120,19 @@ button.btn-contact:focus, button.btn-contact:active{
     color: #F55F44;
 }
 .main-bot {
-    background: url(./assets/bg-bot.svg) no-repeat;
     width: 700px;
     height: 500px;
     position: fixed;
     bottom: -8em;
     background-size: 750px;
     right: -4em;
+}
+.universe{
+    background: url(./assets/bg-bot.svg) no-repeat;
+    width: 700px;
+    height: 500px;
+    background-size: 750px;
+    z-index: -1;
 }
 @keyframes bounceR{
     0%{
@@ -145,8 +151,9 @@ button.btn-contact:focus, button.btn-contact:active{
     width: 200px;
     height: 500px;
     background-size: 197px;
-    margin: -4em 15em;
+    bottom: 6em;
     animation: bounceR 3s infinite 0s linear;
+    position: fixed;
 }
 .scroll{
     background: url(./assets/scroll.svg) no-repeat;
