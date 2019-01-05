@@ -1,0 +1,6 @@
+.H, .e, .l, .l1, .o, .comma{
+    display: inline-block;
+}
+div.intro-main div:not(:first-child) {
+    margin-left: -16px;
+}

@@ -89,25 +89,33 @@ button.btn-contact:focus, button.btn-contact:active{
 }
 /* The typing effect */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from { margin-left:0}
+    to { margin-left: 350px; width: 0 }
 }
   
 /* The typewriter cursor effect */
 
 
-.main div.intro-main p{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
+.main div.intro-main .typing{
     font-weight: 300;
-    animation: 
-    typing 3.5s steps(40, end);
+    position: relative;
+    
+}
+.main div.intro-main .typing::after{
+    content: "";
+    display: block;
+    background: white;
+    height: 158px;
+    width: 320px;
+    position: absolute;
+    top: 0%;
+    animation: typing 3.5s steps(40) forwards;
 }
 
-.main div.intro-main p span {
+.main div.intro-main .typing span.name {
     font-weight: 400;
 }
-.main div.intro-main p span.big {
+.main div.intro-main .typing span.big {
     font-weight: 800;
     color: #F55F44;
 }
