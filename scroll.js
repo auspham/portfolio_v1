@@ -18,5 +18,8 @@ function universeScale() {
     let value = $(window).scrollTop()*0.01;
     if(value >= 1) {
         $(".universe").css("transform", "scale(" + value + ")");
+    } else {
+        $(".universe").css("transform", "scale(" + 1 + ")");
+
     }
 }
