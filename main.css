@@ -98,7 +98,7 @@ button.btn-contact:focus, button.btn-contact:active{
 
 .main div.intro-main .typing{
     font-weight: 300;
-    position: relative;
+    position: fixed;
     
 }
 .main div.intro-main .typing::after{
