@@ -63,9 +63,13 @@ function Shape(x,y,dy,radius){
         this.y += this.dy;
     }
     this.scroll = function () {
-        this.y +=  (- $(window).scrollTop())*.3;
+        this.y -=  ($(window).scrollTop())*.3;
         if(this.y > fullheigh) {
             this.y = 0;
+            this.x = Math.random()*innerWidth;
+        }
+        if(this.y < 0) {
+            this.y = fullheigh;
             this.x = Math.random()*innerWidth;
         }
     }
