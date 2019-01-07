@@ -16,6 +16,7 @@ function Shape(x,y,dy,radius){
     this.dy = dy;
     this.radius = radius;
     this.color = "#000";
+    this.scroll = 0;
     var shape = Math.floor(Math.random() * Math.floor(4));
     this.render = function () {
       c.beginPath();
@@ -53,6 +54,9 @@ function Shape(x,y,dy,radius){
             this.x = Math.random()*innerWidth;
         }
         this.y += this.dy;
+    }
+    if(this.scroll = 1) {
+        this.y +=  $(window).scrollTop();
     }
 }
 function init() {
