@@ -10,12 +10,14 @@ canvas.height = fullheigh;
 shapeArr = [];
 let c = canvas.getContext('2d')
 window.addEventListener("resize",init,false);
-window.addEventListener("scroll", shapeScroll, false);
-function shapeScroll() {
+
+window.onscroll = function(e) {
     for(let i = 0; i < shapeArr.length; i ++) {
-        shapeArr[i].scroll();
+        shapeArr[i].scroll(this.oldScroll > this.scrollY);
     }
+    this.oldScroll = this.scrollY;
 }
+
 
 function Shape(x,y,dy,radius){
     this.x = x;
@@ -62,8 +64,14 @@ function Shape(x,y,dy,radius){
         }
         this.y += this.dy;
     }
-    this.scroll = function () {
-        this.y -=  ($(window).scrollTop())*.3;
+    this.scroll = function (e) {
+        if(e == false) {
+            // down
+            this.y -=  ($(window).scrollTop())*.3;
+        } else {
+            this.y +=  ($(window).scrollTop())*.3;
+        }
+        // limit
         if(this.y > fullheigh) {
             this.y = 0;
             this.x = Math.random()*innerWidth;
