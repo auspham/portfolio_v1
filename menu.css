@@ -4,6 +4,7 @@
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    z-index: 2;
 }
 .menu svg{
     transform: scale(1.2);
@@ -36,4 +37,13 @@
 
 .menu:before{
     margin-bottom: 1em;
+}
+
+.d-menu::before, .d-menu::after{
+    width: 1px;
+    height: 25em;
+    background: #fff;
+    content: "";
+    display: block;
+    margin-left: 1.5em;
 }

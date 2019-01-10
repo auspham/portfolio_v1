@@ -1,5 +1,6 @@
 window.addEventListener("scroll", scrollAnimate,false);
 function scrollAnimate() {
+    scrollControl();
     $(".H").css("transform", "translateY(-"+$(window).scrollTop()*1.7+"px)");
     $(".e").css("transform", "translateY(-"+$(window).scrollTop()*1.6+"px)");
     $(".l").css("transform", "translateY(-"+$(window).scrollTop()*1.8+"px)");
@@ -12,6 +13,15 @@ function scrollAnimate() {
     $(".i").css("transform", "translateY(-"+$(window).scrollTop()*1.5+"px)");
     $(".rocket").css("transform", "translateY(-"+$(window).scrollTop()*2+"px)");
     universeScale();
+}
+
+function scrollControl() {
+    let scroll = $(window).scrollTop();
+    if(scroll > window.innerHeight * 0.5) {
+        $(".menu").addClass("d-menu");
+    } else {
+        $(".menu").removeClass("d-menu");
+    }
 }
 
 function universeScale() {

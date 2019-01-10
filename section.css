@@ -8,3 +8,7 @@ section.second {
     z-index: 2;
     position: relative;
 }
+
+.sickoMode{
+    mix-blend-mode: difference;
+}
