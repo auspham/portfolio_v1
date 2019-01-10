@@ -5,6 +5,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     z-index: 2;
+    left: 8em;
 }
 .menu svg{
     transform: scale(1.2);
