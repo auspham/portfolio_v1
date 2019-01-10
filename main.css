@@ -159,7 +159,7 @@ button.btn-contact:focus, button.btn-contact:active{
     background: url(./assets/scroll.svg) no-repeat;
     width: 50px;
     height: 50px;
-    position: absolute;
+    position: fixed;
     bottom: 6em;
     left: 50%;
     transform: scale(1.5);
@@ -170,7 +170,10 @@ button.btn-contact:focus, button.btn-contact:active{
     animation: bounce 2s infinite;
 
 }
+.d-scroll{
+    background: url(./assets/d-scroll.svg) no-repeat;
 
+}
 @-moz-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
       -moz-transform: translateY(0) scale(1.5);

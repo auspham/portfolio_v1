@@ -23,19 +23,27 @@ function scrollControl() {
         $(".right-scroll").addClass("d-rightscroll");
         $(".small").removeClass("active")
         $(".small").eq(1).addClass("active");
+        $(".scroll").addClass("d-scroll");
     } else {
         // differnt section
         $(".menu").removeClass("d-menu");
         $(".right-scroll").removeClass("d-rightscroll");
         $(".small").removeClass("active")
         $(".small").eq(0).addClass("active");
+        $(".scroll").removeClass("d-scroll");
+
     }
 }
 
 function universeScale() {
     let value = $(window).scrollTop()*0.01;
     if(value >= 1) {
-        $(".universe").css("transform", "scale(" + value + ")");
+        if(value > 10) {
+            $(".universe").css("transform", "scale(" + 10 + ")");
+
+        } else {
+            $(".universe").css("transform", "scale(" + value + ")");
+        }
     } else {
         $(".universe").css("transform", "scale(" + 1 + ")");
 
