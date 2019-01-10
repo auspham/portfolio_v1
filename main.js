@@ -96,8 +96,12 @@ function init() {
 function animate() {
     requestAnimationFrame(animate);
     c.clearRect(0,0,innerWidth,innerHeight);
-    for(let i = 0; i < shapeArr.length; i ++) {
-      shapeArr[i].render();
+    if($(window).scrollTop() < window.innerHeight) {
+        for(let i = 0; i < shapeArr.length; i ++) {
+            shapeArr[i].render();
+        }
+    } else {
+        // do nothing - anti lag
     }
 }
 animate();
