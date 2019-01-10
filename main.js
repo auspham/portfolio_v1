@@ -26,9 +26,13 @@ function Shape(x,y,dy,radius){
     this.radius = radius;
     this.color = "#000";
     this.scroll = 0;
+    this.noscroll = false;
     var shape = Math.floor(Math.random() * Math.floor(4));
     this.render = function () {
+      this.noscroll = false;
       c.beginPath();
+      c.fillStyle = "white";
+      c.strokeStyle = "black";
       if(shape == 0) {
           // circle
           c.arc(this.x,this.y,this.radius*1.1,0,Math.PI*2,false);
@@ -57,6 +61,20 @@ function Shape(x,y,dy,radius){
       }
       this.move();
     }
+    this.renderDark = function() {
+        this.noscroll = true;
+        console.log("rendering dark");
+        c.beginPath();
+        c.fillStyle = "white";
+        c.strokeStyle = "white";
+        if(shape == 0) {
+            // snowball
+            c.arc(this.x,this.y,this.radius*0.5,0,Math.PI*2,false);
+            c.stroke();
+            c.fill();
+        }
+        this.move();
+    }
     this.move = function() {
         if(this.y > fullheigh) {
             this.y = 0;
@@ -65,10 +83,11 @@ function Shape(x,y,dy,radius){
         this.y += this.dy;
     }
     this.scroll = function (e) {
-        if(e == false) {
+        if(e == false && this.noscroll == false) {
             // down
             this.y -=  ($(window).scrollTop())*.3;
-        } else {
+        } else if(e && this.noscroll == false){
+            // up
             this.y +=  ($(window).scrollTop())*.3;
         }
         // limit
@@ -96,12 +115,14 @@ function init() {
 function animate() {
     requestAnimationFrame(animate);
     c.clearRect(0,0,innerWidth,innerHeight);
-    if($(window).scrollTop() < window.innerHeight) {
+    if($(window).scrollTop() <= window.innerHeight) {
         for(let i = 0; i < shapeArr.length; i ++) {
             shapeArr[i].render();
         }
     } else {
-        // do nothing - anti lag
+        for(let i = 0; i < shapeArr.length; i ++) {
+            shapeArr[i].renderDark();
+        }
     }
 }
 animate();
