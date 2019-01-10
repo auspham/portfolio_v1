@@ -17,7 +17,7 @@ function scrollAnimate() {
 
 function scrollControl() {
     let scroll = $(window).scrollTop();
-    if(scroll > window.innerHeight * 0.5) {
+    if(scroll > window.innerWidth * 0.3) {
         $(".menu").addClass("d-menu");
     } else {
         $(".menu").removeClass("d-menu");
