@@ -29,3 +29,16 @@
     border: 2px solid #000;
 
 }
+
+.d-rightscroll .small{
+    background: #fff;
+    border: 2px solid #fff;
+}
+.d-rightscroll .small::after{
+    border: 2px solid #fff;
+}
+
+.d-rightscroll .active{
+    background: #000;
+    border: 2px solid #fff;
+}

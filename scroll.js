@@ -18,9 +18,17 @@ function scrollAnimate() {
 function scrollControl() {
     let scroll = $(window).scrollTop();
     if(scroll > window.innerWidth * 0.3) {
+        // second section
         $(".menu").addClass("d-menu");
+        $(".right-scroll").addClass("d-rightscroll");
+        $(".small").removeClass("active")
+        $(".small").eq(1).addClass("active");
     } else {
+        // differnt section
         $(".menu").removeClass("d-menu");
+        $(".right-scroll").removeClass("d-rightscroll");
+        $(".small").removeClass("active")
+        $(".small").eq(0).addClass("active");
     }
 }
 
