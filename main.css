@@ -1,11 +1,10 @@
 canvas{
     position: fixed;
-    z-index: 1;
+    z-index: -1;
 }
 .container{
     margin-top: 5em;
     position: relative;
-    z-index: 2;
 }
 .top-nav{
     display:block;
@@ -79,6 +78,7 @@ button.btn-contact:focus, button.btn-contact:active{
     display: block;
     margin: 0 auto;
     background-size: 607px;
+    z-index: 0;
 }
 
 .main div.intro-main{
@@ -133,7 +133,7 @@ button.btn-contact:focus, button.btn-contact:active{
     width: 700px;
     height: 500px;
     background-size: 750px;
-    z-index: -1;
+    z-index: 1;
 }
 @keyframes bounceR{
     0%{

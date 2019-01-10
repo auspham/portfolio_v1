@@ -116,10 +116,12 @@ function animate() {
     requestAnimationFrame(animate);
     c.clearRect(0,0,innerWidth,innerHeight);
     if($(window).scrollTop() <= window.innerHeight) {
+        $("canvas").css("z-index", "-1")
         for(let i = 0; i < shapeArr.length; i ++) {
             shapeArr[i].render();
         }
     } else {
+        $("canvas").css("z-index", "1")
         for(let i = 0; i < shapeArr.length; i ++) {
             shapeArr[i].renderDark();
         }
