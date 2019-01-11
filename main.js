@@ -63,7 +63,6 @@ function Shape(x,y,dy,radius){
     }
     this.renderDark = function() {
         this.noscroll = true;
-        console.log("rendering dark");
         c.beginPath();
         c.fillStyle = "white";
         c.strokeStyle = "white";
