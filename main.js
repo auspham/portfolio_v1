@@ -33,6 +33,8 @@ function Shape(x,y,dy,radius){
       c.beginPath();
       c.fillStyle = "white";
       c.strokeStyle = "black";
+      c.lineWidth = 1;
+
       if(shape == 0) {
           // circle
           c.arc(this.x,this.y,this.radius*1.1,0,Math.PI*2,false);
@@ -71,6 +73,16 @@ function Shape(x,y,dy,radius){
             c.arc(this.x,this.y,this.radius*0.5,0,Math.PI*2,false);
             c.stroke();
             c.fill();
+        }
+        if(shape == 1 ) {
+            // plus
+            let unit = this.radius;
+            c.moveTo(this.x + unit/2, this.y);
+            c.lineTo(this.x + unit/2, this.y + unit);
+            c.moveTo(this.x, this.y + unit/2);
+            c.lineTo(this.x + unit, this.y + unit/2);
+            c.lineWidth = unit/4;
+            c.stroke();
         }
         this.move();
     }
