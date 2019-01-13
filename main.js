@@ -68,13 +68,13 @@ function Shape(x,y,dy,radius){
         c.beginPath();
         c.fillStyle = "white";
         c.strokeStyle = "white";
-        if(shape == 0 && shape == 1) {
+        if(shape == 0) {
             // snowball
             c.arc(this.x,this.y,this.radius*0.5,0,Math.PI*2,false);
             c.stroke();
             c.fill();
         }
-        if(shape == 2 && shape == 3 ) {
+        if(shape == 1 ) {
             // plus
             let unit = this.radius;
             c.moveTo(this.x + unit/2, this.y);
