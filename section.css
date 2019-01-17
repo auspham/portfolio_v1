@@ -18,6 +18,16 @@ section .wrapper h1 {
     font-size: 5em;
 }
 
+section .wrapper .btn-eclipse {
+    border-radius: 99px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.7em 2.6em;
+    min-width: 200px;
+    font-size: 1.8em;
+    margin-top: 1.5em;
+}
+
 section .wrapper h4 {
     font-weight: 300;
     width: 500px;
