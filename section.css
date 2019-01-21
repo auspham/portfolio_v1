@@ -21,6 +21,7 @@ section.second {
 section .wrapper {
     margin: 10em 20em;
     position: absolute;
+    width: 1300px;
 }
 section .wrapper h1 {
     font-weight: 700;
@@ -47,6 +48,29 @@ section .wrapper h4 {
     margin-top: 1.5em;
     font-size: 1.5em;
 }
-.sickoMode{
-    mix-blend-mode: difference;
+
+section.second .moon{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+section.second .moon .fig{
+    background: url("./assets/moon.svg");
+    width: 350px;
+    height: 350px;
+    z-index: 2;
+    position: absolute;
+}
+
+.moon .line{
+    content: "";
+    width: 2px;
+    height: 500px;
+    background: #fff;
+    position: absolute;
+    top: -450px;
+    z-index: 1;
+    left: 50%;
 }
