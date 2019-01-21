@@ -34,7 +34,7 @@ canvas{
     margin-right: .1em;
 }
 .nav-socialmedia div.envelop{
-    background: url('./assets/envelope-regular.svg') no-repeat;
+    background: url('../../assets/envelope-regular.svg') no-repeat;
     opacity: 0.8;
     width: 42px;
     height: 42px;
@@ -75,7 +75,7 @@ button.btn-contact:focus, button.btn-contact:active{
 }
 
 .main{
-    background: url(./assets/self.png) no-repeat;
+    background: url(../../assets/self.png) no-repeat;
     width: 1310px;
     height: 698px;
     display: block;
@@ -132,7 +132,7 @@ button.btn-contact:focus, button.btn-contact:active{
     right: -4em;
 }
 .universe{
-    background: url(./assets/bg-bot.svg) no-repeat;
+    background: url(../../assets/bg-bot.svg) no-repeat;
     width: 700px;
     height: 500px;
     background-size: 750px;
@@ -151,7 +151,7 @@ button.btn-contact:focus, button.btn-contact:active{
 }
 
 .rocket{
-    background: url("./assets/rocket.svg") no-repeat;
+    background: url("../../assets/rocket.svg") no-repeat;
     width: 200px;
     height: 500px;
     background-size: 197px;
@@ -160,7 +160,7 @@ button.btn-contact:focus, button.btn-contact:active{
     position: fixed;
 }
 .scroll{
-    background: url(./assets/scroll.svg) no-repeat;
+    background: url(../../assets/scroll.svg) no-repeat;
     width: 50px;
     height: 50px;
     position: fixed;
@@ -175,7 +175,7 @@ button.btn-contact:focus, button.btn-contact:active{
 
 }
 .d-scroll{
-    background: url(./assets/d-scroll.svg) no-repeat;
+    background: url(../../assets/d-scroll.svg) no-repeat;
 
 }
 @-moz-keyframes bounce {

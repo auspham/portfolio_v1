@@ -57,7 +57,7 @@ section.second .moon{
     top: 50%;
 }
 section.second .moon .fig{
-    background: url("./assets/moon.svg");
+    background: url("../../assets/moon.svg");
     width: 350px;
     height: 350px;
     z-index: 2;
