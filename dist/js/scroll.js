@@ -1,22 +1,24 @@
 window.addEventListener("scroll", scrollAnimate,false);
 function scrollAnimate() {
+    var scroll = $(window).scrollTop();
     scrollControl();
-    $(".H").css("transform", "translateY(-"+$(window).scrollTop()*1.7+"px)");
-    $(".e").css("transform", "translateY(-"+$(window).scrollTop()*1.6+"px)");
-    $(".l").css("transform", "translateY(-"+$(window).scrollTop()*1.8+"px)");
-    $(".l1").css("transform", "translateY(-"+$(window).scrollTop()*1.7+"px)");
-    $(".o").css("transform", "translateY(-"+$(window).scrollTop()*1.6+"px)");
-    $(".comma").css("transform", "translateY(-"+$(window).scrollTop()*1.6+"px)");
-    $(".A").css("transform", "translateY(-"+$(window).scrollTop()*1.8+"px)");
-    $(".u").css("transform", "translateY(-"+$(window).scrollTop()*1.6+"px)");
-    $(".t").css("transform", "translateY(-"+$(window).scrollTop()*1.5+"px)");
-    $(".i").css("transform", "translateY(-"+$(window).scrollTop()*1.5+"px)");
-    $(".rocket").css("transform", "translateY(-"+$(window).scrollTop()*2+"px)");
+    $(".H").css("transform", "translateY(-"+scroll*1.7+"px)");
+    $(".e").css("transform", "translateY(-"+scroll*1.6+"px)");
+    $(".l").css("transform", "translateY(-"+scroll*1.8+"px)");
+    $(".l1").css("transform", "translateY(-"+scroll*1.7+"px)");
+    $(".o").css("transform", "translateY(-"+scroll*1.6+"px)");
+    $(".comma").css("transform", "translateY(-"+scroll*1.6+"px)");
+    $(".A").css("transform", "translateY(-"+scroll*1.8+"px)");
+    $(".u").css("transform", "translateY(-"+scroll*1.6+"px)");
+    $(".t").css("transform", "translateY(-"+scroll*1.5+"px)");
+    $(".i").css("transform", "translateY(-"+scroll*1.5+"px)");
+    $(".rocket").css("transform", "translateY(-"+scroll*2+"px)");
+    $(".moon").css("transform", "translateY(" + (-window.innerHeight + scroll) +  "px)");
     universeScale();
 }
 
 function scrollControl() {
-    let scroll = $(window).scrollTop();
+    var scroll = $(window).scrollTop();
     if(scroll > window.innerWidth * 0.3) {
         // second section
         $(".menu").addClass("d-menu");
