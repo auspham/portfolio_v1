@@ -13,7 +13,14 @@ function scrollAnimate() {
     $(".t").css("transform", "translateY(-"+scroll*1.5+"px)");
     $(".i").css("transform", "translateY(-"+scroll*1.5+"px)");
     $(".rocket").css("transform", "translateY(-"+scroll*2+"px)");
-    $(".moon").css("transform", "translateY(" + (-window.innerHeight + scroll) +  "px)");
+    let moonscroll = (-window.innerHeight + scroll);
+    if(moonscroll < 80){
+        $(".moon").css("transform", "translateY(" + moonscroll +  "px)");
+
+    } else {
+        $(".moon").css("transform", "translateY(" + 80 +  "px)");
+        $(".credit").addClass("animated fadeIn");
+    }
     universeScale();
 }
 

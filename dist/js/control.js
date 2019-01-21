@@ -1,5 +1,5 @@
 var options = {
-    animateThreshold: 400,
+    animateThreshold: 300,
     scrollPollInterval: 20
 }
 $(".second .wrapper .description h1").AniView(options);

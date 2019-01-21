@@ -60,8 +60,8 @@ section.second .moon{
 }
 section.second .moon .fig{
     background: url("../../assets/moon.svg");
-    width: 350px;
-    height: 350px;
+    width: 430px;
+    height: 430px;
     z-index: 2;
     position: absolute;
 }
@@ -74,5 +74,37 @@ section.second .moon .fig{
     position: absolute;
     top: -450px;
     z-index: 1;
+    left: 60%;
+}
+
+.moon .credit {
+    background: url(../../assets/comment-alt-solid.svg) no-repeat center center;
+    background-size: 230px 230px;
+    border-radius: 10px;
+    width: 212px;
+    z-index: 5;
+    position: absolute;
+    color: black;
+    padding: 1.5em 1.3em;
+    margin: -81px auto;
     left: 50%;
+    transform: translateX(-30%);
+    height: 89px;
+    opacity: 0;
+}
+
+/* .moon .credit::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 20px solid;
+    border-color: white transparent transparent white;
+    top: 52px;
+} */
+
+
+
+.moon .credit strong{
+    font-weight: 600;
 }
