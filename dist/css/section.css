@@ -9,6 +9,10 @@
     color: white;
 }
 
+.hide {
+    opacity: 0;
+}
+
 section{
     min-width: 100vw;
 	height: 100vh;
