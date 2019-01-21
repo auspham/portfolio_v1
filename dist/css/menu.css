@@ -14,7 +14,7 @@
 
 }
 .menu .burger{
-    background: url("./assets/burger.svg") no-repeat;
+    background: url("../../assets/burger.svg") no-repeat;
     width: 50px;
     height: 21px;
     transform: scale(1.2);
@@ -50,7 +50,7 @@
 }
 
 .d-menu .burger{
-    background: url("./assets/d-burger.svg") no-repeat;
+    background: url("../../assets/d-burger.svg") no-repeat;
 }
 
 .d-menu span{
