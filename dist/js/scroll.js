@@ -16,8 +16,10 @@ function scrollAnimate() {
     let moonscroll = (-window.innerHeight + scroll);
     if(moonscroll < 80){
         $(".moon").css("transform", "translateY(" + moonscroll +  "px)");
+        $(".credit").addClass("animated fadeOut");
     } else {
         $(".moon").css("transform", "translateY(" + 80 +  "px)");
+        $(".credit").removeClass("animated fadeOut");
         $(".credit").addClass("animated fadeIn");
         $(".second .btn").addClass("animated fadeIn")
     }

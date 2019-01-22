@@ -97,17 +97,6 @@ section.second .moon .fig{
     opacity: 0;
 }
 
-/* .moon .credit::after{
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 20px solid;
-    border-color: white transparent transparent white;
-    top: 52px;
-} */
-
-
 
 .moon .credit strong{
     font-weight: 600;
