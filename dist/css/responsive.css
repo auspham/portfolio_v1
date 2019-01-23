@@ -9,3 +9,33 @@
         max-width: 1700px;
     }
 }
+
+/* width */
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+    .main{
+        transform: scale(.9);
+    }
+    .main-bot{
+        transform: scale(.9);
+        right: -9em;
+        bottom: -11em;
+    }
+    div.main-bot .universe {
+    }
+
+    div.main-bot .rocket {
+        bottom: 17em;
+    }
+
+    .second .wrapper .moon{
+        width: 250px;
+        height: 250px;
+    }
+
+    .second .wrapper .moon .fig{
+        width: 330px;
+        height: 330px;
+    }
+
+}
