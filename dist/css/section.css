@@ -18,15 +18,14 @@ section{
 	height: 100vh;
 }
 
-section.second {
+.second {
     color: white;
     z-index: 1;
     position: relative;
+    padding:  10em 20em;
 }
 section .wrapper {
-    margin: 10em 20em;
-    position: absolute;
-    width: 1300px;
+    width: 800px;
 }
 section .wrapper h1 {
     font-weight: 700;
