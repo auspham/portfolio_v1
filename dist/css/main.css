@@ -176,7 +176,7 @@ button.btn-contact:focus, button.btn-contact:active{
 }
 .d-scroll{
     background: url(../../assets/d-scroll.svg) no-repeat;
-
+    z-index: 2;
 }
 @-moz-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
