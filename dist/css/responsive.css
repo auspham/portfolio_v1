@@ -126,3 +126,20 @@
         font-size: 1.3em;
     }
 }
+
+@media (max-width: 500px) {
+    body::after{
+        content: "Hey, look like I haven't made it compatible to your device yet. Please visit my github at github.com/rockmanvnx6 for projects.";
+        position: fixed;
+        padding: 50% 0;
+        z-index: 9999;
+        color: white;
+        width: 100%;
+        height: 100%;
+        background: black;
+        text-align: center;
+        vertical-align: middle;
+        top: 0;
+        left: 0;
+    }
+}
