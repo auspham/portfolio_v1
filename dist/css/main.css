@@ -158,6 +158,7 @@ button.btn-contact:focus, button.btn-contact:active{
     bottom: 6em;
     animation: bounceR 3s infinite 0s linear;
     position: fixed;
+    z-index: 9;
 }
 .scroll{
     background: url(../../assets/scroll.svg) no-repeat;
