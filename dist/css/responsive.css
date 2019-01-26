@@ -108,6 +108,10 @@
     .main-bot{
         /* display: none; */
     }
+    div.main{
+        transform: scale(.7);
+        margin: -195px auto;
+    }
     section.second {
         padding: 8em 15em;
     }
