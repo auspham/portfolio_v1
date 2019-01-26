@@ -106,11 +106,25 @@
 }
 @media (max-height: 700px) {
     .main-bot{
-        display: none;
+        /* display: none; */
     }
     section.second {
-        background: black;
         padding: 8em 15em;
+    }
+
+    .second .wrapper .moon .fig {
+        width: 270px;
+        height: 270px;
+    }
+
+    .second .wrapper .moon .line{
+        left: 50%;
+    }
+
+    .second .wrapper .moon .credit{
+        font-size: .9em;
+        padding: 1.7em 2.1em;
+        background-size: 200px 200px;
     }
 
     section.second .wrapper .description h1{

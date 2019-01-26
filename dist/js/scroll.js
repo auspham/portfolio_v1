@@ -53,7 +53,8 @@ function universeScale() {
             $(".universe").css("transform", "scale(" + 10 + ")");
 
         } else {
-            $(".universe").css("transform", "scale(" + value + ")");
+            $(".universe").css("transform", "scale(" + ((window.innerHeight > 700)
+             ? value : value*1.5) + ")");
         }
     } else {
         $(".universe").css("transform", "scale(" + 1 + ")");
