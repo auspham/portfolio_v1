@@ -289,16 +289,22 @@
         line-height: 1em;
     }
     section.second div.moon {
-        height: 100%;
+        height: 100%!important;
         top: 0;
+        z-index: -1;
+        width: 350px!important;
+        clear: both;
+        right: inherit;
+        left: 50%;
     }
     .second .wrapper .moon .fig {
-        width: 330px;
+        width: 330px!important;
         height: 330px;
         bottom: 0;
     }
     .second .wrapper .moon .line{
         height: 120%;
+        left: 50%;
     }
     .second .wrapper{
         width: fit-content;
@@ -316,6 +322,13 @@
     }
     br {
         line-height: 0em;
+    }
+    button.btn {
+        display: block;
+        margin: 0 auto;
+    }
+    .credit{
+        bottom: 20em;
     }
 }
 

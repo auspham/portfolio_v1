@@ -1,5 +1,6 @@
 window.addEventListener("scroll", scrollAnimate,false);
 function scrollAnimate() {
+    var responsive = false;
     var scroll = $(window).scrollTop();
     scrollControl();
     $(".H").css("transform", "translateY(-"+scroll*1.7+"px)");
@@ -13,12 +14,21 @@ function scrollAnimate() {
     $(".t").css("transform", "translateY(-"+scroll*1.5+"px)");
     $(".i").css("transform", "translateY(-"+scroll*1.5+"px)");
     $(".rocket").css("transform", "translateY(-"+scroll*2+"px)");
-    let moonscroll = (-window.innerHeight + scroll);
+    let moonscroll;
+
+    if(window.innerWidth <= 600) {
+        moonscroll = (-window.innerHeight + scroll*1.2);
+        responsive = true;
+    } else {
+        moonscroll = (-window.innerHeight + scroll);
+        responsive = false;
+    }
+    
     if(moonscroll < 80){
-        $(".moon").css("transform", "translateY(" + moonscroll +  "px)");
+        $(".moon").css({transform: "translateY(" + moonscroll +  "px) translateX(-50%)"});
         $(".credit").addClass("animated fadeOut");
     } else {
-        $(".moon").css("transform", "translateY(" + 80 +  "px)");
+        $(".moon").css({transform: "translateY(" + 80 +  "px) translateX(-50%)"});
         $(".credit").removeClass("animated fadeOut");
         $(".credit").addClass("animated fadeIn");
         $(".second .btn").addClass("animated fadeIn")
