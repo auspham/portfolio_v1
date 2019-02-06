@@ -200,20 +200,82 @@
     }
 }
 
-@media (max-width: 500px) {
-    body::after{
-        content: "Hey, look like I haven't made it compatible to your device yet. Please visit my github at github.com/rockmanvnx6 for projects.";
+@media (max-width: 600px) {
+    .static-text{
+        display: block;
+    }
+    div.main {
+        width: fit-content;
+        background: none;
+        margin: inherit;
+    }
+
+    .main div.intro-main {
+        float: none;
+        margin: 0 auto;
+        width: 297px;
+        overflow: hidden;
+        height: 180px;
+    
+    }
+    .typing { 
+        display: none;
+    }
+    .main div.intro-main .static-text{
+        font-weight: 300;
         position: fixed;
-        padding: 50% 2em;
-        z-index: 9999;
-        color: white;
-        width: 100%;
-        height: 100%;
-        background: black;
+        
+    }
+    .main div.intro-main .static-text div.name {
+        font-weight: 400;
+    }
+    .main div.intro-main .static-text div.big {
+        font-weight: 800;
+        color: #F55F44;
+    }
+    .right-scroll {
+        display: none;
+    }
+    .menu {
+        left: 3em;
+    }
+    .menu::after, .menu::before{
+        display: none;
+    }
+    .nav-socialmedia-sub{
+        display: block;
+        font-size: 1em;
         text-align: center;
-        vertical-align: middle;
-        top: 0;
-        font-size: 5em;
-        left: 0;
+        margin-left: -15px;
+    }
+    .nav-socialmedia{
+        display: none;
+    }
+    div.main-bot{
+        right: 5em;
+        width: 100vw;
+        transform: scale(1);
+    }
+
+    div.main-bot .rocket{
+        width: 150px;
+        background-size: 150px;
+        bottom: 16em;
+        left: 50%;
+        -moz-animation: bounceMR 2s infinite;
+        -webkit-animation: bounceMR 2s infinite;
+        animation: bounceMR 2s infinite;
+     
+    }
+    @keyframes bounceMR{
+        0%{
+            margin: -4em auto;
+            }
+        50%{
+            margin: -6em auto;
+            }
+        100%{
+            margin: -4em auto;
+            }
     }
 }

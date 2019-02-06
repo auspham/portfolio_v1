@@ -1,6 +1,10 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+.nav-socialmedia-sub, .static-text{
+    display: none;
+}
+
 canvas{
     position: fixed;
     z-index: -1;
@@ -28,12 +32,12 @@ canvas{
     display: inline-block;
 }
 
-.nav-socialmedia i{
+.nav-socialmedia i, .nav-socialmedia-sub i{
     font-size: 3em;
     opacity:0.9;
     margin-right: .1em;
 }
-.nav-socialmedia div.envelop{
+.nav-socialmedia div.envelop, .nav-socialmedia-sub div.envelop{
     background: url('../../assets/envelope-regular.svg') no-repeat;
     opacity: 0.8;
     width: 42px;
@@ -48,12 +52,19 @@ canvas{
     opacity: 1;
     cursor: pointer;
 }
+.nav-socialmedia-sub div.envelop:hover{
+    opacity: 1;
+    cursor: pointer;
+}
 
 .nav-socialmedia i:hover{
     opacity:1;
     cursor: pointer;
 }
-
+.nav-socialmedia-sub i:hover{
+    opacity:1;
+    cursor: pointer;
+}
 
 
 button.btn-contact{
