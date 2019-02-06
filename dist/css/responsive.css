@@ -208,6 +208,7 @@
         width: fit-content;
         background: none;
         margin: inherit;
+        height: auto;
     }
 
     .main div.intro-main {
@@ -267,6 +268,12 @@
         animation: bounceMR 2s infinite;
      
     }
+    section {
+        padding: 2em!important;
+    }
+    body section:not(:first-child) {
+        padding-top: 8em!important;
+    }
     @keyframes bounceMR{
         0%{
             margin: -4em auto;
@@ -277,5 +284,43 @@
         100%{
             margin: -4em auto;
             }
+    }
+    center{
+        line-height: 1em;
+    }
+    section.second div.moon {
+        height: 100%;
+        top: 0;
+    }
+    .second .wrapper .moon .fig {
+        width: 330px;
+        height: 330px;
+        bottom: 0;
+    }
+    .second .wrapper .moon .line{
+        height: 120%;
+    }
+    .second .wrapper{
+        width: fit-content;
+    }
+    .second .description {
+        width: fit-content;
+    }
+    .second .wrapper h4 {
+        width: fit-content;
+        text-align: center;
+    }
+    .second .wrapper h1{
+        text-align: center;
+        font-size: 4em;
+    }
+    br {
+        line-height: 0em;
+    }
+}
+
+@media (max-width: 500px) {
+    .second .wrapper .moon .line {
+        left: 50%;
     }
 }
