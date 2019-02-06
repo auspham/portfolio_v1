@@ -62,6 +62,7 @@
     .main{
         transform: scale(.9);
         margin: -130px auto;
+        /* width: 1200px; */
     }
     .main-bot{
         transform: scale(.9);
@@ -104,6 +105,8 @@
 
     }
 }
+
+
 @media (max-height: 700px) {
     .main-bot{
         /* display: none; */
@@ -113,7 +116,7 @@
         margin: -195px auto;
     }
     section.second {
-        padding: 8em 15em;
+        padding: 13vh 15em;
     }
 
     .second .wrapper .moon .fig {
@@ -142,6 +145,13 @@
     section.second .wrapper .description .btn-eclipse {
         padding: .5em 2.4em;
         font-size: 1.3em;
+    }
+}
+
+@media (max-height: 600px) {
+    div.main {
+        transform: scale(.6);
+        margin: -238px auto;
     }
 }
 
