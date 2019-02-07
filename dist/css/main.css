@@ -178,64 +178,61 @@ button.btn-contact:focus, button.btn-contact:active{
     position: fixed;
     bottom: 6em;
     left: 50%;
-    transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
+    -moz-animation: bounceX 2s infinite;
+    -webkit-animation: bounceX 2s infinite;
+    animation: bounceX 2s infinite;
 
 }
 .d-scroll{
     background: url(../../assets/d-scroll.svg) no-repeat;
     z-index: 2;
 }
-@-moz-keyframes bounce {
+@-moz-keyframes bounceX {
     0%, 20%, 50%, 80%, 100% {
-      -moz-transform: translateY(0) scale(1.5);
-      transform: translateY(0) scale(1.5);
+      -moz-transform: translateY(0) translateX(-50%);
+      transform: translateY(0) translateX(-50%);
       
     }
     40% {
-      -moz-transform: translateY(-30px) scale(1.5);
-      transform: translateY(-30px) scale(1.5);
+      -moz-transform: translateY(-30px) translateX(-50%);
+      transform: translateY(-30px) translateX(-50%);
     }
     60% {
-      -moz-transform: translateY(-15px) scale(1.5);
-      transform: translateY(-15px) scale(1.5);
+      -moz-transform: translateY(-15px) translateX(-50%);
+      transform: translateY(-15px) translateX(-50%);
     }
   }
-  @-webkit-keyframes bounce {
+  @-webkit-keyframes bounceX {
     0%, 20%, 50%, 80%, 100% {
-      -webkit-transform: translateY(0) scale(1.5);
-      transform: translateY(0) scale(1.5);
+      -webkit-transform: translateY(0) translateX(-50%);
+      transform: translateY(0) translateX(-50%);
     }
     40% {
-      -webkit-transform: translateY(-30px) scale(1.5);
-      transform: translateY(-30px) scale(1.5);
+      -webkit-transform: translateY(-30px) translateX(-50%);
+      transform: translateY(-30px) translateX(-50%);
     }
     60% {
-      -webkit-transform: translateY(-15px) scale(1.5);
-      transform: translateY(-15px) scale(1.5);
+      -webkit-transform: translateY(-15px) translateX(-50%);
+      transform: translateY(-15px) translateX(-50%);
     }
   }
-  @keyframes bounce {
+  @keyframes bounceX {
     0%, 20%, 50%, 80%, 100% {
-      -moz-transform: translateY(0) scale(1.5);
-      -ms-transform: translateY(0) scale(1.5);
-      -webkit-transform: translateY(0) scale(1.5);
-      transform: translateY(0) scale(1.5);
+      -moz-transform: translateY(0) translateX(-50%);
+      -ms-transform: translateY(0) translateX(-50%);
+      -webkit-transform: translateY(0) translateX(-50%);
+      transform: translateY(0) translateX(-50%);
     }
     40% {
-      -moz-transform: translateY(-30px) scale(1.5);
-      -ms-transform: translateY(-30px) scale(1.5);
-      -webkit-transform: translateY(-30px) scale(1.5);
-      transform: translateY(-30px) scale(1.5);
+      -moz-transform: translateY(-30px) translateX(-50%);
+      -ms-transform: translateY(-30px) translateX(-50%);
+      -webkit-transform: translateY(-30px) translateX(-50%);
+      transform: translateY(-30px) translateX(-50%);
     }
     60% {
-      -moz-transform: translateY(-15px) scale(1.5);
-      -ms-transform: translateY(-15px) scale(1.5);
-      -webkit-transform: translateY(-15px) scale(1.5);
-      transform: translateY(-15px) scale(1.5);
+      -moz-transform: translateY(-15px) translateX(-50%);
+      -ms-transform: translateY(-15px) translateX(-50%);
+      -webkit-transform: translateY(-15px) translateX(-50%);
+      transform: translateY(-15px) translateX(-50%);
     }
   }
