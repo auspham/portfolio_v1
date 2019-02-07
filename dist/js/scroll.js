@@ -1,4 +1,5 @@
 window.addEventListener("scroll", scrollAnimate,false);
+window.addEventListener("touchmove", scrollAnimate, false);
 function scrollAnimate() {
     var responsive = false;
     var scroll = $(window).scrollTop();
