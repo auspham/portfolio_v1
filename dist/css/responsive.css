@@ -354,6 +354,13 @@
 }
 
 @media (max-width: 600px) and (max-height: 900px) {
+    div.container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    div.main {
+        margin: 0 auto;
+    }
     .scroll {
         bottom: 1em;
     }
@@ -366,4 +373,10 @@
         transform: scale(.8);
     }
 
+}
+
+@media (max-width: 600px) and (max-height: 700px) {
+    div.container {
+        margin-top: 0;
+    }
 }
