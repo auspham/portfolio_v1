@@ -32,11 +32,11 @@ function scrollAnimate() {
         responsive = false;
     }
     
-    if(moonscroll < 80){
+    if(moonscroll < 0){
         $(".moon").css({transform: "translateY(" + moonscroll +  "px) translateX(-50%)"});
         $(".credit").addClass("animated fadeOut");
     } else {
-        $(".moon").css({transform: "translateY(" + 80 +  "px) translateX(-50%)"});
+        $(".moon").css({transform: "translateY(" + 0 +  "px) translateX(-50%)"});
         $(".credit").removeClass("animated fadeOut");
         $(".credit").addClass("animated fadeIn");
         $(".second .btn").addClass("animated fadeIn")
