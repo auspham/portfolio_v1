@@ -181,7 +181,7 @@ button.btn-contact:focus, button.btn-contact:active{
     -moz-animation: bounceX 2s infinite;
     -webkit-animation: bounceX 2s infinite;
     animation: bounceX 2s infinite;
-
+    z-index: 1;
 }
 .d-scroll{
     background: url(../../assets/d-scroll.svg) no-repeat;

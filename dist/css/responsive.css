@@ -296,6 +296,7 @@
         clear: both;
         right: inherit;
         left: 50%;
+        opacity: .5;
     }
     .second .wrapper .moon .fig {
         width: 330px!important;
@@ -353,6 +354,16 @@
 }
 
 @media (max-width: 600px) and (max-height: 900px) {
+    .scroll {
+        bottom: 1em;
+    }
 
+    section .main-bot {
+        bottom: -20em;
+    }
+
+    section .main-bot div.rocket{
+        transform: scale(.8);
+    }
 
 }

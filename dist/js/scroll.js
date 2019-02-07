@@ -13,7 +13,14 @@ function scrollAnimate() {
     $(".u").css("transform", "translateY(-"+scroll*1.6+"px)");
     $(".t").css("transform", "translateY(-"+scroll*1.5+"px)");
     $(".i").css("transform", "translateY(-"+scroll*1.5+"px)");
-    $(".rocket").css("transform", "translateY(-"+scroll*2+"px)");
+    // $(".rocket").css("transform", "translateY(-"+scroll*2+"px)");
+    if(window.innerHeight <= 900) {
+        $(".rocket").css({
+            transform: "translateY(-"+scroll*2+"px) scale(.8)"
+        })
+    } else {
+        $(".rocket").css("transform", "translateY(-"+scroll*2+"px)");
+    }
     let moonscroll;
 
     if(window.innerWidth <= 600) {
@@ -38,20 +45,29 @@ function scrollAnimate() {
 
 function scrollControl() {
     var scroll = $(window).scrollTop();
+
     if(scroll > window.innerWidth * 0.3) {
         // second section
         $(".menu").addClass("d-menu");
         $(".right-scroll").addClass("d-rightscroll");
         $(".small").removeClass("active")
         $(".small").eq(1).addClass("active");
-        $(".scroll").addClass("d-scroll");
+        if(window.innerWidth <= 600) {
+            // $(".scroll").removeClass("d-scroll");
+        } else {
+            $(".scroll").addClass("d-scroll");
+        }
     } else {
         // differnt section
         $(".menu").removeClass("d-menu");
         $(".right-scroll").removeClass("d-rightscroll");
         $(".small").removeClass("active")
         $(".small").eq(0).addClass("active");
-        $(".scroll").removeClass("d-scroll");
+        if(window.innerWidth <= 600) {
+            $(".scroll").addClass("d-scroll");
+        } else {
+            $(".scroll").removeClass("d-scroll");
+        }
 
     }
 }
