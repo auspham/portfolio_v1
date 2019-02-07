@@ -8,3 +8,16 @@ div.name{
     display: inline-block;
     margin-left: 12px!important;
 }
+body {
+    -ms-scroll-snap-type: proximity;
+      scroll-snap-type: proximity;
+  -ms-scroll-snap-points-y: repeat(150vh);
+      scroll-snap-points-y: repeat(150vh);
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+}
+
+section{
+	scroll-snap-align: start end;
+    position: relative; 
+}

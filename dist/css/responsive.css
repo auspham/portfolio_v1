@@ -377,6 +377,6 @@
 
 @media (max-width: 600px) and (max-height: 700px) {
     div.container {
-        margin-top: 0;
+        padding-top: 0;
     }
 }
