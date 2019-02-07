@@ -10,7 +10,7 @@ canvas{
     z-index: -1;
 }
 .container{
-    margin-top: 5em;
+    padding-top: 5em;
     position: relative;
 }
 .top-nav{
