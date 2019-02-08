@@ -25,6 +25,10 @@
 .menu .burger:hover{
     cursor: pointer;
 }
+
+.menu span:hover{
+    cursor: pointer;
+}
 .menu span{
     margin-top: 1px;
 }
@@ -99,4 +103,36 @@
 
 .main-menu .closebtn:hover {
     cursor: pointer;
+}
+.main-menu-item:hover{
+    cursor: pointer;
+}
+.main-menu-item{
+    transition: all .3s ease;
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    overflow: hidden;
+    width: 300px;
+    margin: 0 auto;
+}
+.main-menu-item:before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transform: scaleX(0);
+}
+.main-menu-item:hover:before {
+    transform: scaleX(1);
+}
+.main-menu-item:before, .main-menu-item:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+}
+
+.main-menu-item{
+    transform: translate(-3px, -3px);
 }

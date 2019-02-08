@@ -6,7 +6,7 @@ $(".second .wrapper .description h1").AniView(options);
 $(".second .wrapper .description h4").AniView();
 
 
-$(".menu .burger").click(function () {
+$(".menu .burger").add(".menu span").click(function () {
     $(".main-menu").css("display", "block");
 })
 
