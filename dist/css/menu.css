@@ -20,6 +20,7 @@
     transform: scale(1.2);
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
+    /* animation-direction: reverse */
 }
 
 .menu .burger:hover{
@@ -89,14 +90,17 @@
 }
 
 .main-menu .closebtn{
-    background: url("../../assets/closebtn.svg");
+    background: url("../../assets/sprite_60fps.svg");
+    animation-fill-mode: forwards;
+    background-repeat: no-repeat;
+    animation-duration: 300ms;
+    animation-timing-function: steps(18);
     position: relative;
     top: 46%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-size: 50px;
-    left: 8em;
+    transform: translateY(-50%) scale(.8);
+    width: 68px;
+    height: 68px;
+    left: 7.5em;
     z-index: 100;
 
 }
@@ -136,3 +140,11 @@
 .main-menu-item{
     transform: translate(-3px, -3px);
 }
+@keyframes play18 {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: -1224px 0px;
+    }
+  }
