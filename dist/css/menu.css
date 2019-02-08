@@ -93,5 +93,10 @@
     height: 50px;
     background-size: 50px;
     left: 8em;
+    z-index: 100;
 
+}
+
+.main-menu .closebtn:hover {
+    cursor: pointer;
 }
