@@ -120,6 +120,6 @@ section.second {
     position: fixed;
 }
 
-section.second .wrapper .description {
+section .wrapper .description {
     display: none;
 }

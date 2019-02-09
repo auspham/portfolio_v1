@@ -48,7 +48,7 @@
         height: 330px;
     }
 
-    section.second {
+    section.second, section.third {
         padding: 5em 15em;
     }
 
@@ -86,7 +86,7 @@
         height: 330px;
     }
 
-    section.second {
+    section.second, section.third {
         padding: 5em 15em;
     }
 
@@ -117,7 +117,7 @@
     .main-bot{
         transform: scale(.7);
     }
-    section.second {
+    section.second, section.third {
         padding: 13vh 15em;
     }
 
@@ -135,15 +135,15 @@
         padding: 1.7em 2.1em;
         background-size: 200px 200px;
     }
-    section.second .wrapper .description {
+    section.second .wrapper .description, section div.wrapper div.description {
         transform: scale(1);
     }
 
-    section.second .wrapper .description h1{
+    section.second .wrapper .description h1, section div.wrapper div.description h1{
         font-size: 4em;
     }
 
-    section.second .wrapper .description h4 {
+    section.second .wrapper .description h4, section div.wrapper div.description h4 {
         font-size: 1em;
     }
 
@@ -160,7 +160,7 @@
         transform: scale(.7);
         margin: -195px auto;
     }
-    section.second {
+    section.second, section.third{
         padding: 13vh 15em;
     }
 
@@ -179,11 +179,11 @@
         background-size: 200px 200px;
     }
 
-    section.second .wrapper .description h1{
+    section.second .wrapper .description h1, section div.wrapper div.description h1{
         font-size: 4em;
     }
 
-    section.second .wrapper .description h4 {
+    section.second .wrapper .description h4, section div.wrapper div.description h4 {
         font-size: 1em;
     }
 
