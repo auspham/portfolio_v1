@@ -110,7 +110,7 @@ section {
 }
 section.third {
     padding: 10em 20em;
-    z-index: 2;
+    z-index: 1;
     color: #fff;
     position: fixed;
     top: 0;
@@ -125,4 +125,9 @@ section.second {
 
 section .wrapper .description {
     display: none;
+}
+
+
+.nav-socialmedia, .nav-socialmedia-sub{
+    z-index: 3;
 }

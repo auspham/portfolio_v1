@@ -5,8 +5,9 @@ function /* Control scroll show view */ viewControl() {
     var height = window.innerHeight;
     let moonscroll;
     moonscroll = (-window.innerHeight + scroll*1.2);
-
-    if/* pass second screen */(scroll >= height) {
+    if/* pass first screen */(scroll >= height) {
+        $(".third").css("z-index","1");
+        $(".second").css("z-index","2");
         $(".moon")/* moon goes up* */.css({
             transform: "translateY(" + (height - scroll) +  "px) translateX(-50%)"
         });
@@ -16,9 +17,14 @@ function /* Control scroll show view */ viewControl() {
     }
 
     if(scroll >= 2*height) {
+        $(".second").css("z-index","1");
+        $(".third").css("z-index","2");
         $(".third .wrapper .description").fadeIn();
     } else if(scroll < 2* height) {
         $(".third .wrapper .description").fadeOut();
+        // $(".second").css("z-index","1");
+        // $(".third").css("z-index","1");
+
     }
 
 }

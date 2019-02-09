@@ -307,17 +307,17 @@
         height: 120%;
         left: 50%;
     }
-    section.second .wrapper{
+    section.second .wrapper, section div.wrapper{
         width: fit-content;
     }
-    section.second .description {
+    section.second .description, section div.description {
         width: fit-content;
     }
-    section.second .wrapper h4 {
+    section.second .wrapper h4, section div.wrapper h4 {
         width: fit-content;
         text-align: center;
     }
-    section.second .wrapper h1{
+    section.second .wrapper h1, section div.wrapper h1{
         text-align: center;
         font-size: 4em;
     }
@@ -353,8 +353,8 @@
     }
     
     section .wrapper h4, section.second .wrapper h4 {
-        line-height: 1.2em;
-        font-size: 1.2em;
+        line-height: 1.2em!important;
+        font-size: 1.2em!important;
     }
 }
 
