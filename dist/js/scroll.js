@@ -1,5 +1,4 @@
 window.addEventListener("scroll", scrollAnimate,false);
-$("section:not(:first-child) .wrapper .description").fadeOut();
 // window.addEventListener("touchmove", scrollAnimate, false);
 function scrollAnimate() {
     var responsive = false;
