@@ -59,7 +59,7 @@ function scrollControl() {
         } else {
             $(".scroll").addClass("d-scroll");
         }
-    } else {
+    } else if(scroll <= window.innerWidth * 0.3) {
         // differnt section
         $(".menu").removeClass("d-menu");
         $(".right-scroll").removeClass("d-rightscroll");

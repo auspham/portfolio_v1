@@ -5,13 +5,17 @@ function /* Control scroll show view */ viewControl() {
     var height = window.innerHeight;
     let moonscroll;
     moonscroll = (-window.innerHeight + scroll*1.2);
-    if(scroll >= height * 2) {
+    if /* third screen */(scroll >= height * 2) {
+        $(".small").removeClass("active")
+        $(".small").eq(2).addClass("active");
+        /* small screen 1-2 in scroll.js bc it's complex*/
         $(".second").css("z-index","1");
         $(".third").css("z-index","2");
         $(".third .wrapper .description").fadeIn();
         $(".third .third-bgWrap").fadeIn();
         $(".main-bot").fadeOut();
-    } else if/* pass first screen */(scroll >= height) {
+    } else if/* second screen */(scroll >= height) {
+
         $(".third").css("z-index","1");
         $(".second").css("z-index","2");
         $(".third .third-bgWrap").fadeOut();
@@ -23,5 +27,7 @@ function /* Control scroll show view */ viewControl() {
             $(".second .wrapper .description").fadeOut();
         }
         $(".main-bot").fadeIn();
-    } 
+    } else if /*first screen */ (scroll < height) {
+
+    }
 }
