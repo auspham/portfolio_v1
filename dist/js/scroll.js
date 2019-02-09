@@ -34,16 +34,15 @@ function scrollAnimate() {
     
     if(moonscroll < 0){
         $(".moon").css({transform: "translateY(" + moonscroll +  "px) translateX(-50%)"});
-        $(".credit").addClass("animated fadeOut");
+        $(".credit").fadeOut();
         // $(".second .wrapper .description").removeClass("animated fadeIn");
         // $(".second .wrapper .description").addClass("animated fadeOut");
         $(".second .wrapper .description").fadeOut();
 
 
-    } else {
-        $(".moon").css({transform: "translateY(" + 0 +  "px) translateX(-50%)"});
-        $(".credit").removeClass("animated fadeOut");
-        $(".credit").addClass("animated fadeIn");
+    } else if (moonscroll > 0 && moonscroll < window.innerHeight*2){
+        // $(".moon").css({transform: "translateY(" + moonscroll +  "px) translateX(-50%)"});
+        $(".credit").fadeIn();
         $(".second .btn").addClass("animated fadeIn")
         // $(".second .wrapper .description").removeClass("animated fadeOut");
         // $(".second .wrapper .description").addClass("animated fadeIn");
