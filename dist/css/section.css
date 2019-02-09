@@ -100,3 +100,26 @@ section.second .moon .fig{
 .moon .credit strong{
     font-weight: 600;
 }
+
+body{
+    height: 500vh;
+}
+
+section {
+    position: relative;
+}
+section.third {
+    padding: 10em 20em;
+    z-index: 2;
+    color: #fff;
+}
+
+section.second {
+    width: 90%;
+    top: 0;
+    position: fixed;
+}
+
+section.second .wrapper .description {
+    opacity: 0;
+}
