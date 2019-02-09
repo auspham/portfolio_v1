@@ -49,7 +49,7 @@
     }
 
     section.second, section.third {
-        padding: 5em 15em;
+        padding: 5em 15em!important;
     }
 
     section .wrapper .description {

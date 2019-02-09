@@ -29,19 +29,18 @@ function scrollAnimate() {
     if(moonscroll < 0){
         $(".moon").css({transform: "translateY(" + moonscroll +  "px) translateX(-50%)"});
         $(".credit").fadeOut();
-        // $(".second .wrapper .description").removeClass("animated fadeIn");
-        // $(".second .wrapper .description").addClass("animated fadeOut");
+       
         $(".second .wrapper .description").fadeOut();
+        $(".third .wrapper .description").fadeOut();
 
 
-    } else if (moonscroll > 0 && moonscroll < window.innerHeight /* change depends on moon*/){
+    } else if (moonscroll >= 0 && moonscroll <= window.innerHeight /* change depends on moon*/){
         if(window.innerHeight >= 1000 && window.innerWidth >= 600) {
             $(".credit").fadeIn();
         }
         $(".second .btn").addClass("animated fadeIn")
-        // $(".second .wrapper .description").removeClass("animated fadeOut");
-        // $(".second .wrapper .description").addClass("animated fadeIn");
         $(".second .wrapper .description").fadeIn();
+
     }
     universeScale();
 }
