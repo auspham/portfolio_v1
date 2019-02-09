@@ -9,11 +9,11 @@ function /* Control scroll show view */ viewControl() {
     } else {
         moonscroll = (-window.innerHeight + scroll);
     }
-    if/* pass second screen */(scroll > 2*height) {
+    if/* pass second screen */(scroll >= height) {
         $(".moon")/* moon goes up* */.css({
-            transform: "translateY(" + (2*height - scroll) +  "px) translateX(-50%)"
+            transform: "translateY(" + (height - scroll) +  "px) translateX(-50%)"
         });
-        if /*moon is out of the screen */ ((height - moonscroll) < (-height)) {
+        if /*moon is out of the screen */ ((height - moonscroll) < 0) {
             $(".second .wrapper .description").fadeOut();
         }
     }
