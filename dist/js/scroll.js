@@ -24,13 +24,7 @@ function scrollAnimate() {
     }
     let moonscroll;
 
-    if(window.innerWidth <= 600) {
-        moonscroll = (-window.innerHeight + scroll*1.2);
-        responsive = true;
-    } else {
-        moonscroll = (-window.innerHeight + scroll);
-        responsive = false;
-    }
+    moonscroll = (-window.innerHeight + scroll*1.2 /* how long it stops change in viewcontrol.js as well*/);
     
     if(moonscroll < 0){
         $(".moon").css({transform: "translateY(" + moonscroll +  "px) translateX(-50%)"});
@@ -40,7 +34,7 @@ function scrollAnimate() {
         $(".second .wrapper .description").fadeOut();
 
 
-    } else if (moonscroll > 0 && moonscroll < window.innerHeight){
+    } else if (moonscroll > 0 && moonscroll < window.innerHeight /* change depends on moon*/){
         if(window.innerHeight >= 1000 && window.innerWidth >= 600) {
             $(".credit").fadeIn();
         }
