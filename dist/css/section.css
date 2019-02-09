@@ -93,7 +93,7 @@ section.second .moon .fig{
     left: 50%;
     transform: translateX(-30%);
     height: 89px;
-    opacity: 0;
+    display: none;
 }
 
 
@@ -120,6 +120,6 @@ section.second {
     position: fixed;
 }
 
-section.second .wrapper .description {
+section .wrapper .description {
     display: none;
 }
