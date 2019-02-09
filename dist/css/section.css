@@ -133,7 +133,7 @@ section .wrapper .description {
 }
 
 section.third .third-bgWrap{
-    background: url("../../assets/bitstat-bg.png") no-repeat 50% 50%;
+    /* background: url("../../assets/bitstat-bg.png") no-repeat 50% 50%; */
     width: 100%;
     height: 100%;
     top: 0;
@@ -142,7 +142,12 @@ section.third .third-bgWrap{
     display: none;
 
 }
-
+section.third .third-bgWrap iframe{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+}
 section.third .third-bgWrap::before {
     content: "";
     display: block;
