@@ -11,7 +11,7 @@ function /* Control scroll show view */ viewControl() {
     }
     if/* pass second screen */(scroll > 2*height) {
         $(".moon")/* moon goes up* */.css({
-            transform: "translateY(" + (height - moonscroll) +  "px) translateX(-50%)"
+            transform: "translateY(" + (2*height - scroll) +  "px) translateX(-50%)"
         });
         if /*moon is out of the screen */ ((height - moonscroll) < (-height)) {
             $(".second .wrapper .description").fadeOut();
