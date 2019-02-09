@@ -40,7 +40,7 @@ function scrollAnimate() {
         $(".second .wrapper .description").fadeOut();
 
 
-    } else if (moonscroll > 0 && moonscroll < window.innerHeight*2){
+    } else if (moonscroll > 0 && moonscroll < window.innerHeight){
         if(window.innerHeight >= 1000 && window.innerWidth >= 600) {
             $(".credit").fadeIn();
         }
