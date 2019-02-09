@@ -41,8 +41,9 @@ function scrollAnimate() {
 
 
     } else if (moonscroll > 0 && moonscroll < window.innerHeight*2){
-        // $(".moon").css({transform: "translateY(" + moonscroll +  "px) translateX(-50%)"});
-        $(".credit").fadeIn();
+        if(window.innerHeight >= 1000 && window.innerWidth >= 600) {
+            $(".credit").fadeIn();
+        }
         $(".second .btn").addClass("animated fadeIn")
         // $(".second .wrapper .description").removeClass("animated fadeOut");
         // $(".second .wrapper .description").addClass("animated fadeIn");
