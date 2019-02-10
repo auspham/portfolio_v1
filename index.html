@@ -166,9 +166,6 @@
 
 
     <section class="third">
-        <div class="third-bgWrap">
-            <div id="videoPlayer" data-videoid="tkVDxjiTvUg"></div>
-        </div>
         <div class="wrapper">
             <div class="description">
                 <h1 data-av-animation="bounceInDown">Proj<br />ects.</h1>
@@ -195,38 +192,7 @@
         <div class="small"></div>
 
     </div>
-    <script>
-        jQuery(function () {
 
-            // Youtube player
-            window.videoPlayer;
-
-            window.onYouTubeIframeAPIReady = function () {
-                var videoPlayerId = $('#videoPlayer').attr('data-videoid');
-                window.videoPlayer = new YT.Player('videoPlayer', {
-                    height: '1920',
-                    width: '1080',
-                    videoId: videoPlayerId,
-                    playerVars: {
-                        'controls': 1,
-                        'autoplay': 1,
-                        'mute': 1,
-                        'loop': 1,
-                        'showinfo': 0,
-                        'modestbranding': 1
-                    },
-                    events: {
-                        'onReady': onVideoPlayerReady,
-                        'onStateChange': onVideoPlayerReady
-                    }
-                });
-            }
-
-            function onVideoPlayerReady(event) {
-                videoPlayer.playVideo();
-            }
-        });
-    </script>
     <div class="scroll"></div>
     <script src="./dist/js/jquery.aniview.js"></script>
     <script src="./dist/js/main.js"></script>

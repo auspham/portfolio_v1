@@ -111,7 +111,7 @@ section {
 section.third {
     padding: 10em 20em;
     z-index: 1;
-    color: #fff;
+    color: #000;
     position: fixed;
     top: 0;
     width: 90%;
