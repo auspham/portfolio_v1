@@ -157,3 +157,59 @@ section.third .third-bgWrap::before {
     left: 0;
     background: #0000007a;
 }
+
+section .cloud div{
+    position: fixed;
+    bottom: -5em;
+}
+
+section .cloud .cloud1{
+    background: url("../../assets/cloud1.svg") no-repeat;
+    width: 373px;
+    height: 188px;
+    left: -5em;
+}
+
+section .cloud .cloud2{
+    background: url("../../assets/cloud2.svg") no-repeat;
+    width: 678px;
+    height: 205px;
+    left: 6em;
+    bottom: -2em;
+}
+
+section .cloud .cloud3 {
+    background: url("../../assets/cloud3.svg") no-repeat;
+    width: 400px;
+    height: 221px;
+    left: 27em;
+}
+
+
+section .cloud .cloud4 {
+    background: url("../../assets/cloud4.svg") no-repeat;
+    width: 450px;
+    height: 195px;
+    right: 25em;
+    bottom: -6em;
+}
+
+section .cloud .cloud5 {
+    background: url("../../assets/cloud2.svg") no-repeat;
+    width: 676px;
+    height: 205px;
+    right: 0em;
+    bottom: -7em;
+}
+
+section .cloud .cloud6 {
+    background: url("../../assets/cloud4.svg") no-repeat;
+    width: 450px;
+    height: 193px;
+    right: -4em;
+    bottom: -8em;
+}
+
+.cloud {
+    display: none;
+}
