@@ -27,6 +27,7 @@ function scrollAnimate() {
     moonscroll = (-window.innerHeight + scroll*1.2 /* how long it stops change in viewcontrol.js as well*/);
     
     if(moonscroll < 0){
+        /*  moon goes down. For moon goes up see viewcontrol.js */
         $(".moon").css({transform: "translateY(" + moonscroll +  "px) translateX(-50%)"});
         $(".credit").fadeOut();
        

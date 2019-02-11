@@ -42,6 +42,7 @@ section .wrapper .btn-eclipse {
     font-size: 1.5em;
     margin-top: 1.5em;
     background: #fff;
+    float:left;
 }
 
 section .wrapper h4 {
@@ -217,4 +218,17 @@ section .cloud .cloud6 {
 
 section .wrapper .description h4 strong{
     font-weight: 700;
+}
+
+section .wrapper .description h4.viewsource {
+    display: inline;
+    width: fit-content;
+    line-height: 2.8em;
+    float: right;
+    margin-right: 1em;
+}
+
+section .wrapper .description .viewsource-btn {
+    overflow: hidden;
+    width: 655px;
 }

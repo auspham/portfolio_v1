@@ -23,9 +23,14 @@ function /* Control scroll show view */ viewControl() {
         $(".second").css("z-index","2");
         $(".third .third-bgWrap").fadeOut();
         $(".third .wrapper .description").fadeOut();
-        $(".moon")/* moon goes up* */.css({
-            transform: "translateY(" + (height - scroll) +  "px) translateX(-50%)"
-        });
+        if(height - scroll < -1000) {
+            $(".moon").css({transform: "translateY(-2000px) translateX(-50%)"});
+        } else {
+            $(".moon")/* moon goes up* */.css({
+                transform: "translateY(" + (height - scroll) +  "px) translateX(-50%)"
+            });
+        }
+        
         if /*moon is out of the screen */ ((height - moonscroll) < 0) {
             $(".second .wrapper .description").fadeOut();
         }
