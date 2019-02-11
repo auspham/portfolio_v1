@@ -152,6 +152,9 @@ section.third .third-bgWrap iframe{
     height: 100%;
     top:0;
 }
+section .cloud{
+    z-index: 5;
+}
 
 section .cloud div{
     position: fixed;

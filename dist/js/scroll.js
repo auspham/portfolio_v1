@@ -49,6 +49,7 @@ function cloudFly() {
     var scroll = $(window).scrollTop();
     var height = window.innerHeight;
     var cloud = height-scroll;
+    var bgcloud = 3*height - scroll;
     $(".cloud").css("display", "block");
     if(scroll < height) {
         $(".cloud1").css("transform","translateY(" + cloud*1.1 + "px)");
@@ -57,14 +58,17 @@ function cloudFly() {
         $(".cloud4").css("transform","translateY(" + cloud*1.2 + "px)");
         $(".cloud5").css("transform","translateY(" + cloud*.8 + "px)");
         $(".cloud6").css("transform","translateY(" + cloud*1.4 + "px)");
-    } else if(scroll >= height * 1.2) {
-        cloud = height*1.2 - scroll;
+    } else /* goes out second screen */if(scroll >= height * 1.5) {
+        cloud = height*1.5 - scroll;
         $(".cloud1").css("transform","translateY(" + cloud*1.1 + "px)");
         $(".cloud2").css("transform","translateY(" + cloud*1.5 + "px)");
-        $(".cloud3").css("transform","translateY(" + cloud*.9 + "px)");
+        $(".cloud3").css("transform","translateY(" + cloud*.6 + "px)");
         $(".cloud4").css("transform","translateY(" + cloud*1.2 + "px)");
         $(".cloud5").css("transform","translateY(" + cloud*.8 + "px)");
         $(".cloud6").css("transform","translateY(" + cloud*1.4 + "px)");
+        if (scroll <= height * 3 && bgcloud > 0) {
+            $(".third-bgWrap").css("transform","translateY(" + bgcloud + "px)");
+        }
     }
   
 
