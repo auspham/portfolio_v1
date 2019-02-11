@@ -107,6 +107,8 @@ body{
 
 section {
     position: relative;
+    overflow: hidden;
+
 }
 section.third {
     padding: 10em 20em;
