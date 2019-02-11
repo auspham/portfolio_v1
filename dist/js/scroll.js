@@ -57,8 +57,8 @@ function cloudFly() {
         $(".cloud4").css("transform","translateY(" + cloud*1.2 + "px)");
         $(".cloud5").css("transform","translateY(" + cloud*.8 + "px)");
         $(".cloud6").css("transform","translateY(" + cloud*1.4 + "px)");
-    } else if(scroll >= height * 1.2) {
-        cloud = height*1.2 - scroll;
+    } else if(scroll >= height * 1.5) {
+        cloud = height*1.5 - scroll;
         $(".cloud1").css("transform","translateY(" + cloud*1.1 + "px)");
         $(".cloud2").css("transform","translateY(" + cloud*1.5 + "px)");
         $(".cloud3").css("transform","translateY(" + cloud*.9 + "px)");
