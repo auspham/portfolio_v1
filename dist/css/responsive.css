@@ -55,6 +55,9 @@
     section .wrapper .description {
         transform: scale(.9)
     }
+    div.cloud3 {
+        bottom: -7em!important;
+    }
 
 }
 /* height */
@@ -151,6 +154,7 @@
         padding: .5em 2.4em;
         font-size: 1.3em;
     }
+
 } 
 @media (max-height: 700px) {
     .main-bot{
