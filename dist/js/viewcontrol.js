@@ -9,6 +9,7 @@ function /* Control scroll show view */ viewControl() {
         $("canvas").css("display","none");
         $(".menu").removeClass("d-menu");
         $(".right-scroll").removeClass("d-rightscroll");
+        $(".scroll").removeClass("d-scroll");
         $(".small").removeClass("active")
         $(".small").eq(2).addClass("active");
         /* small screen 1-2 in scroll.js bc it's complex*/
