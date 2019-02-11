@@ -41,6 +41,8 @@ section .wrapper .btn-eclipse {
     min-width: 200px;
     font-size: 1.5em;
     margin-top: 1.5em;
+    background: #fff;
+    float:left;
 }
 
 section .wrapper h4 {
@@ -107,11 +109,16 @@ body{
 
 section {
     position: relative;
+    overflow: hidden;
+
 }
 section.third {
     padding: 10em 20em;
-    z-index: 2;
-    color: #fff;
+    z-index: 1;
+    color: #000;
+    position: fixed;
+    top: 0;
+    width: 90%;
 }
 
 section.second {
@@ -122,4 +129,106 @@ section.second {
 
 section .wrapper .description {
     display: none;
+    transform: scale(1);
+}
+
+
+.nav-socialmedia, .nav-socialmedia-sub{
+    z-index: 3;
+}
+
+section.third .third-bgWrap{
+    background: url("../../assets/bg-cloud.svg") no-repeat;
+    width: 105vw;
+    height: 100vh;
+    top: 0;
+    left: -5%;
+
+    position: fixed;
+    display: none;
+    background-size: 127em 120em;
+
+}
+section.third .third-bgWrap iframe{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+}
+section .cloud{
+    z-index: 5;
+}
+
+section .cloud div{
+    position: fixed;
+    bottom: -5em;
+    z-index: 5;
+}
+
+section .cloud .cloud1{
+    background: url("../../assets/cloud1.svg") no-repeat;
+    width: 373px;
+    height: 188px;
+    left: -5em;
+}
+
+section .cloud .cloud2{
+    background: url("../../assets/cloud2.svg") no-repeat;
+    width: 678px;
+    height: 205px;
+    left: 6em;
+    bottom: -2em;
+}
+
+section .cloud .cloud3 {
+    background: url("../../assets/cloud3.svg") no-repeat;
+    width: 400px;
+    height: 221px;
+    left: 27em;
+}
+
+
+section .cloud .cloud4 {
+    background: url("../../assets/cloud4.svg") no-repeat;
+    width: 450px;
+    height: 195px;
+    right: 25em;
+    bottom: -6em;
+}
+
+section .cloud .cloud5 {
+    background: url("../../assets/cloud2.svg") no-repeat;
+    width: 676px;
+    height: 205px;
+    right: 0em;
+    bottom: -7em;
+}
+
+section .cloud .cloud6 {
+    background: url("../../assets/cloud4.svg") no-repeat;
+    width: 450px;
+    height: 193px;
+    right: -4em;
+    bottom: -8em;
+}
+
+.cloud {
+    display: none;
+}
+
+section .wrapper .description h4 strong{
+    font-weight: 700;
+}
+
+section .wrapper .description h4.viewsource {
+    display: inline;
+    width: fit-content;
+    line-height: 2.8em;
+    float: right;
+    margin-right: 1em;
+}
+
+section .wrapper .description .viewsource-btn {
+    overflow: hidden;
+    width: 655px;
 }

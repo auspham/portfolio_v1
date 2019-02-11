@@ -21,7 +21,7 @@
     }
 }
 
-@media (max-width: 1500px) and (min-width: 500px) {
+@media (max-width: 1500px) and (min-width: 700px) {
     .main{
         transform: scale(.9);
         margin: -86px auto;
@@ -49,11 +49,14 @@
     }
 
     section.second, section.third {
-        padding: 5em 15em;
+        padding: 5em 15em!important;
     }
 
     section .wrapper .description {
         transform: scale(.9)
+    }
+    div.cloud3 {
+        bottom: -7em!important;
     }
 
 }
@@ -147,10 +150,11 @@
         font-size: 1em;
     }
 
-    section.second .wrapper .description .btn-eclipse {
+    section.second .wrapper .description .btn-eclipse, section .wrapper .description .btn-eclipse {
         padding: .5em 2.4em;
         font-size: 1.3em;
     }
+
 } 
 @media (max-height: 700px) {
     .main-bot{
@@ -187,7 +191,7 @@
         font-size: 1em;
     }
 
-    section.second .wrapper .description .btn-eclipse {
+    section.second .wrapper .description .btn-eclipse,  section .wrapper .description .btn-eclipse {
         padding: .5em 2.4em;
         font-size: 1.3em;
     }
@@ -201,6 +205,18 @@
 }
 
 @media (max-width: 600px) {
+    section .cloud div.cloud3{
+        left: 14em;
+    }
+    .cloud1{
+        left: -11em;
+    }
+    .cloud2{
+        bottom: -6em;
+    }
+    .cloud4, .cloud5, .cloud6{
+        display: none;
+    }
     .static-text{
         display: block;
     }
@@ -307,17 +323,17 @@
         height: 120%;
         left: 50%;
     }
-    section.second .wrapper{
+    section.second .wrapper, section div.wrapper{
         width: fit-content;
     }
-    section.second .description {
+    section.second .description, section div.description {
         width: fit-content;
     }
-    section.second .wrapper h4 {
+    section.second .wrapper h4, section div.wrapper h4 {
         width: fit-content;
         text-align: center;
     }
-    section.second .wrapper h1{
+    section.second .wrapper h1, section div.wrapper h1{
         text-align: center;
         font-size: 4em;
     }
@@ -336,6 +352,38 @@
         top: 6%;
         left: 2.5em;
     }
+
+    section.third div.third-bgWrap{
+        background: url(../../assets/bg-cloud.svg) no-repeat 0% 50%;
+        width: 137%;
+        height: 135%;
+        background-size: 209% 141%;
+
+    }
+    section.second .wrapper .description .btn-eclipse,  section .wrapper .description .btn-eclipse {
+        float: none;
+    }
+    section div.wrapper div.description h4.viewsource {
+        display: inherit;
+        width: fit-content;
+        line-height: 0;
+        float: left;
+        margin-right: 1em;
+        margin-top: 1em;
+        font-size: 1.2em;
+    }
+    
+    section div.wrapper div.description div.viewsource-btn {
+        overflow: hidden;
+        width: 100%!important;
+    }
+
+    section div.wrapper div.description div.viewsource-btn div.info-btn{
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: center;
+        width: 280px;
+    }
 }
 
 @media (max-width: 600px) and (max-height: 1000px) {
@@ -353,8 +401,8 @@
     }
     
     section .wrapper h4, section.second .wrapper h4 {
-        line-height: 1.2em;
-        font-size: 1.2em;
+        line-height: 1.2em!important;
+        font-size: 1.2em!important;
     }
 }
 
