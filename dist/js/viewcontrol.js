@@ -6,6 +6,8 @@ function /* Control scroll show view */ viewControl() {
     let moonscroll;
     moonscroll = (-window.innerHeight + scroll*1.2);
     if /* third screen */(scroll >= height * 2) {
+        $(".menu").removeClass("d-menu");
+        $(".right-scroll").removeClass("d-rightscroll");
         $(".small").removeClass("active")
         $(".small").eq(2).addClass("active");
         /* small screen 1-2 in scroll.js bc it's complex*/

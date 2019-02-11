@@ -133,13 +133,15 @@ section .wrapper .description {
 }
 
 section.third .third-bgWrap{
-    /* background: url("../../assets/bitstat-bg.png") no-repeat 50% 50%; */
-    width: 100%;
-    height: 100%;
+    background: url("../../assets/bg-cloud.svg") no-repeat;
+    width: 105vw;
+    height: 100vh;
     top: 0;
-    left: 0;
+    left: -5%;
+
     position: fixed;
     display: none;
+    background-size: 127em 120em;
 
 }
 section.third .third-bgWrap iframe{
@@ -148,19 +150,11 @@ section.third .third-bgWrap iframe{
     height: 100%;
     top:0;
 }
-section.third .third-bgWrap::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #0000007a;
-}
 
 section .cloud div{
     position: fixed;
     bottom: -5em;
+    z-index: 5;
 }
 
 section .cloud .cloud1{
