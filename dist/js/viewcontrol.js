@@ -12,15 +12,15 @@ function /* Control scroll show view */ viewControl() {
         $(".small").removeClass("active")
         $(".small").eq(2).addClass("active");
         /* small screen 1-2 in scroll.js bc it's complex*/
-        $(".second .wrapper .description").css("z-index","1");
-        $(".third .wrapper .description").css("z-index","2");
+        $(".second").css("z-index","1");
+        $(".third").css("z-index","2");
         $(".third .wrapper .description").fadeIn();
         $(".third .third-bgWrap").fadeIn();
         $(".main-bot").fadeOut();
     } else if/* second screen */(scroll >= height) {
         $("canvas").css("display","block");
-        $(".third .wrapper .description").css("z-index","1");
-        $(".second .wrapper .description").css("z-index","2");
+        $(".third").css("z-index","1");
+        $(".second").css("z-index","2");
         $(".third .third-bgWrap").fadeOut();
         $(".third .wrapper .description").fadeOut();
         $(".moon")/* moon goes up* */.css({

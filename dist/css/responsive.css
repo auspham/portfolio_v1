@@ -150,7 +150,7 @@
         font-size: 1em;
     }
 
-    section.second .wrapper .description .btn-eclipse {
+    section.second .wrapper .description .btn-eclipse, section .wrapper .description .btn-eclipse {
         padding: .5em 2.4em;
         font-size: 1.3em;
     }
@@ -191,7 +191,7 @@
         font-size: 1em;
     }
 
-    section.second .wrapper .description .btn-eclipse {
+    section.second .wrapper .description .btn-eclipse,  section .wrapper .description .btn-eclipse {
         padding: .5em 2.4em;
         font-size: 1.3em;
     }
@@ -205,7 +205,18 @@
 }
 
 @media (max-width: 600px) {
-    
+    section .cloud div.cloud3{
+        left: 14em;
+    }
+    .cloud1{
+        left: -11em;
+    }
+    .cloud2{
+        bottom: -6em;
+    }
+    .cloud4, .cloud5, .cloud6{
+        display: none;
+    }
     .static-text{
         display: block;
     }

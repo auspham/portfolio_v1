@@ -41,6 +41,7 @@ section .wrapper .btn-eclipse {
     min-width: 200px;
     font-size: 1.5em;
     margin-top: 1.5em;
+    background: #fff;
 }
 
 section .wrapper h4 {
@@ -127,6 +128,7 @@ section.second {
 
 section .wrapper .description {
     display: none;
+    transform: scale(1);
 }
 
 
@@ -211,4 +213,8 @@ section .cloud .cloud6 {
 
 .cloud {
     display: none;
+}
+
+section .wrapper .description h4 strong{
+    font-weight: 700;
 }
