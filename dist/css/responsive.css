@@ -141,7 +141,7 @@
     }
 }
 
-@media (max-width: 1500px) and (min-width: 700px) {
+@media (max-width: 1600px) and (min-width: 700px) {
     .main{
         transform: scale(.9);
         margin: -86px auto;
@@ -218,6 +218,37 @@
     }
 
 }
+@media screen and (max-height: 800px) {
+    .main {
+        transform: scale(.8)
+    }
+    section div.cloud div.cloud2 {
+        bottom: -9em;
+    }
+    section div.wrapper div.description {
+        transform: scale(.9);
+    }
+    section div.cloud div.cloud4 {
+        display: none;
+    }
+   
+}
+@media (max-width: 1204px) and (max-height: 800px) {
+    section.second div.moon{
+        right: -4%;
+    }
+    @media screen and (max-height: 600px) {
+        div.main {
+            transform: scale(.6) translateX(-50%)!important;
+            left: 30%;
+            position: relative;
+        }
+        div.main-bot {
+            transform: scale(0.6);
+        }
+    }
+}
+ 
 @media (max-width: 1500px) and (max-height: 700px) {
     .main-bot{
         transform: scale(.6);
