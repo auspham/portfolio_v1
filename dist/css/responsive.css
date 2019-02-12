@@ -237,22 +237,24 @@
     section.second div.moon{
         right: -4%;
     }
-    @media screen and (max-height: 600px) {
-        div.main {
-            transform: scale(.6) translateX(-50%)!important;
-            left: 30%;
-            position: relative;
-        }
-        div.main-bot {
-            transform: scale(0.6);
-        }
-        div.scroll {
-            bottom: 2em!important;
-        }
-    }
 
 }
- 
+@media screen and (max-height: 600px) {
+    div.main {
+        transform: scale(.6) translateX(-50%)!important;
+        left: 30%;
+        position: relative;
+    }
+    div.main-bot {
+        transform: scale(0.6);
+    }
+    div.scroll {
+        bottom: 2em!important;
+    }
+    section.third div.third-bgWrap {
+        background-size: 127em 99em;
+    }
+}
 @media (max-width: 1500px) and (max-height: 700px) {
     .main-bot{
         transform: scale(.6);
