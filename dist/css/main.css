@@ -1,6 +1,10 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+
+.really-low-res {
+    display: none;
+}
 .nav-socialmedia-sub, .static-text{
     display: none;
 }

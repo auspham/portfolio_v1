@@ -15,9 +15,13 @@ function scrollAnimate() {
     $(".t").css("transform", "translateY(-"+scroll*1.5+"px)");
     $(".i").css("transform", "translateY(-"+scroll*1.5+"px)");
     // $(".rocket").css("transform", "translateY(-"+scroll*2+"px)");
-    if(window.innerHeight <= 900) {
+    if(window.innerHeight <= 900 && window.innerHeight >= 600) {
         $(".rocket").css({
             transform: "translateY(-"+scroll*2+"px) scale(.8)"
+        })
+    } else if(window.innerWidth <= 400) {
+        $(".rocket").css({
+            transform: "translateY(-"+scroll*2+"px) scale(.6)"
         })
     } else {
         $(".rocket").css("transform", "translateY(-"+scroll*2+"px)");
