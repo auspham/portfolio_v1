@@ -1,3 +1,24 @@
+@media (max-width: 400px) and (max-height: 700px) {
+    /* galaxy S5*/
+    section div.cloud div{
+        bottom: -9em;
+    }
+
+    section div.cloud div.cloud2{
+        bottom: -9em;
+    }
+
+    section div.wrapper div.description h4{
+        font-size: 1em!important;
+    }
+    section div.wrapper div.description h1{
+        font-size: 3em!important;
+    }
+    section div.wrapper div.description div.viewsource-btn div.info-btn {
+        width: 233px;
+    }
+}
+
 @media (min-width: 1600px){
     div.container{
         max-width: 1480px;
@@ -367,7 +388,7 @@
         display: inherit;
         width: fit-content;
         line-height: 0;
-        float: left;
+        float: right;
         margin-right: 1em;
         margin-top: 1em;
         font-size: 1.2em;
@@ -433,3 +454,4 @@
         padding-top: 0;
     }
 }
+

@@ -25,7 +25,9 @@ function /* Control scroll show view */ viewControl() {
         $(".third .third-bgWrap").fadeOut();
         $(".third .wrapper .description").fadeOut();
         if(height - scroll < -900) {
-            $(".moon").css({transform: "translateY(-2000px) translateX(-50%)"});
+            $(".moon").css({
+                transform: "translateY(" + (height - scroll)*1.5 +  "px) translateX(-50%)"
+            });
         } else {
             $(".moon")/* moon goes up* */.css({
                 transform: "translateY(" + (height - scroll) +  "px) translateX(-50%)"
