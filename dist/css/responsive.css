@@ -141,7 +141,7 @@
     }
 }
 
-@media (max-width: 1500px) and (min-width: 700px) {
+@media (max-width: 1600px) and (min-width: 700px) {
     .main{
         transform: scale(.9);
         margin: -86px auto;
