@@ -362,6 +362,9 @@
     section .wrapper div.description div.viewsource-btn{
         width: 500px;
     }
+    section.third div.third-bgWrap {
+        background-size: 127em 99em;
+    }
 }
 
 @media (max-height: 600px) {
