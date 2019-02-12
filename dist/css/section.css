@@ -232,3 +232,58 @@ section .wrapper .description h4.viewsource {
 section .wrapper .description .viewsource-btn {
     width: 655px;
 }
+
+section.third div.wrapper .description::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section.third .wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr 100%;
+    opacity: 0;
+}
+section.third .wrapper .page-switcher{
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    height: fit-content;
+    right: -300%;
+}
+section.third .wrapper .page-switcher button.page{
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+section.third .wrapper .page-switcher button.page:not(:last-child){ 
+    margin-bottom: 5em;
+}
+
+section.third .wrapper .page-switcher::after{
+    content: "";
+    background: #000;
+    width: 1px;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+}
+section.third .wrapper .page-switcher button.page.page-active{
+    background: #F55F44;
+    color: #fff;
+}
+section.third .wrapper .page-switcher button.page:focus{
+    outline: 0;
+}
+section.third .wrapper .page-switcher button.page:hover{
+    cursor: pointer;
+    background: #733737;
+}

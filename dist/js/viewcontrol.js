@@ -6,6 +6,7 @@ function /* Control scroll show view */ viewControl() {
     let moonscroll;
     moonscroll = (-window.innerHeight + scroll*1.2);
     if /* third screen */(scroll >= height * 2) {
+        $(".third .wrapper").css("opacity", "1");
         $("canvas").css("display","none");
         $(".menu").removeClass("d-menu");
         $(".right-scroll").removeClass("d-rightscroll");
@@ -19,6 +20,8 @@ function /* Control scroll show view */ viewControl() {
         $(".third .third-bgWrap").fadeIn();
         $(".main-bot").fadeOut();
     } else if/* second screen */(scroll >= height) {
+        $(".third .wrapper").css("opacity", "0");
+
         $(".scroll").addClass("d-scroll");
         $("canvas").css("display","block");
         $(".third").css("z-index","1");
