@@ -233,7 +233,7 @@
     }
    
 }
-@media (max-width: 1204px) and (max-height: 800px) {
+@media (max-width: 1304px) and (max-height: 800px) {
     section.second div.moon{
         right: -4%;
     }
@@ -245,6 +245,9 @@
         }
         div.main-bot {
             transform: scale(0.6);
+        }
+        div.scroll {
+            bottom: 2em!important;
         }
     }
 }
@@ -361,7 +364,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     section .cloud div.cloud3{
         left: 14em;
     }
