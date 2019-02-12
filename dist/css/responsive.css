@@ -1,3 +1,4 @@
+
 @media (max-width: 450px) and (max-height: 840px) {
     /* iphone 6,7, plus, pixel, pixel 2xl, iphone x*/
     section div.cloud div{
@@ -28,6 +29,60 @@
     section div.wrapper div.description div.viewsource-btn div.info-btn {
         width: 233px;
     }
+}
+@media(max-width: 400px) and (max-height: 600px) {
+    /* iphone 5 */
+    div.main {
+        left: 30%!important;
+        position: relative;
+        transform: scale(.6) translateX(-50%)!important;
+    }
+    section div.main-bot div.rocket{ 
+        transform: scale(.6);
+    }
+    section div.main-bot div.universe {
+        background-size: 550px;
+    }
+    .second div.wrapper div.moon div.fig {
+        width: 230px!important;
+        height: 230px!important;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .second div.wrapper div.moon div.line{
+        height: 145%;
+    }
+    section div.wrapper div.description h4{
+        font-size: .9em!important;
+    }
+    section div.wrapper div.description h1{
+        font-size: 2.5em!important;
+    }
+    section div.wrapper div.description div.viewsource-btn div.info-btn {
+        width: 230px!important;
+    }
+    section div.cloud div.cloud1{
+        width: 273px;
+        height: 144px;
+    }
+
+    section div.cloud div.cloud2{
+        width: 425px;
+        height: 165px;
+    }
+
+    section div.cloud div.cloud3{
+        width: 262px;
+    }
+    .menu {
+        top: 9%;
+        left: 2.5em!important;
+    }
+    div.main-menu div.closebtn {
+        top: 12%;
+        left: 2em;
+    }
+
 }
 
 @media (min-width: 1600px){
