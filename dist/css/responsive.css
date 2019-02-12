@@ -85,6 +85,33 @@
 
 }
 
+@media (max-width: 300px) and (max-height: 500px), (max-height: 500px) {
+    /* not support */
+    section, section.third, section.second, .menu, .scroll {
+        display: none!important;
+    }
+    canvas{ 
+        display: none!important;
+    }
+    .right-scroll {
+        display: none;
+    }
+    .really-low-res{
+        display: block;
+        padding:15px;
+        font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+    }
+    .really-low-res p, .really-low-res em{
+        font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+    }
+    .really-low-res h3{
+        font-weight: 300;
+    }
+    .really-low-res h3 strong, .really-low-res h5 strong{
+        font-weight: 600;
+    }
+}
+
 @media (min-width: 1600px){
     div.container{
         max-width: 1480px;
@@ -281,6 +308,12 @@
     section.second .wrapper .description .btn-eclipse,  section .wrapper .description .btn-eclipse {
         padding: .5em 2.4em;
         font-size: 1.3em;
+    }
+    section .wrapper div.description h4.viewsource{
+        line-height: 4.5em;
+    }
+    section .wrapper div.description div.viewsource-btn{
+        width: 500px;
     }
 }
 
