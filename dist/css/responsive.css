@@ -99,16 +99,22 @@
     .really-low-res{
         display: block;
         padding:15px;
-        font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+        /* font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace; */
     }
-    .really-low-res p, .really-low-res em{
-        font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+    .really-low-res p, .really-low-res em, .really-low-res mark, .really-low-res u, .really-low-res a{
+        /* font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace; */
     }
     .really-low-res h3{
         font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
     }
-    .really-low-res h3 strong, .really-low-res h5 strong{
+    .really-low-res h3 strong{
         font-weight: 600;
+    }
+
+    .really-low-res h5 strong{
+        font-weight: 600;
+        /* font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace; */
     }
 }
 
