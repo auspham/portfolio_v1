@@ -19,6 +19,7 @@ function /* Control scroll show view */ viewControl() {
         $(".third .third-bgWrap").fadeIn();
         $(".main-bot").fadeOut();
     } else if/* second screen */(scroll >= height) {
+        $(".scroll").addClass("d-scroll");
         $("canvas").css("display","block");
         $(".third").css("z-index","1");
         $(".second").css("z-index","2");
@@ -30,7 +31,7 @@ function /* Control scroll show view */ viewControl() {
             });
         } else {
             $(".moon")/* moon goes up* */.css({
-                transform: "translateY(" + (height - scroll) +  "px) translateX(-50%)"
+                transform: "translateY(" + (height - scroll)*1.2 +  "px) translateX(-50%)"
             });
         }
         
