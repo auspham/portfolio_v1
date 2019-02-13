@@ -317,7 +317,7 @@
     }
 
 } 
-@media (max-height: 700px) {
+@media (max-height: 710px) {
     .main-bot{
         /* display: none; */
     }
@@ -364,6 +364,9 @@
     }
     section.third div.third-bgWrap {
         background-size: 127em 99em;
+    }
+    div.main-bot div.rocket {
+        transform: scale(.8);
     }
 }
 
