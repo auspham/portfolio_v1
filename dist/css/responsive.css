@@ -85,7 +85,7 @@
 
 }
 
-@media (max-width: 300px) and (max-height: 500px), (max-height: 500px) {
+@media (max-width: 300px) and (max-height: 500px), (max-height: 500px){
     /* not support */
     section, section.third, section.second, .menu, .scroll {
         display: none!important;
