@@ -1,0 +1,48 @@
+@media print {
+    section, section.third, section.second, .menu, .scroll {
+        display: none!important;
+        visibility: hidden;
+    }
+    canvas{ 
+        display: none!important;
+        visibility: hidden;
+    }
+    .right-scroll {
+        display: none;
+    }
+    .really-low-res{
+        display: block;
+        visibility: visible;
+        padding:15px;
+        /* font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace; */
+    }
+    .really-low-res p, .really-low-res em, .really-low-res mark, .really-low-res u, .really-low-res a{
+        /* font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace; */
+    }
+    .really-low-res h3{
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .really-low-res h3 strong{
+        font-weight: 600;
+    }
+
+    .really-low-res h5 strong{
+        font-weight: 600;
+        /* font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace; */
+    }
+    .wrong-screen{
+        display:none!important;
+        visibility: hidden;
+    }
+    .main-menu{
+        display: none;
+    }
+    a, a:visited{text-decoration: none}
+    a::after, a:visited::after {
+        content: " (" attr(href) ")";
+        font-style: italic;
+        word-wrap: break-word;
+    }
+
+}
