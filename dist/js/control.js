@@ -6,6 +6,7 @@ $(".second .wrapper .description h1").AniView(options);
 $(".second .wrapper .description h4").AniView();
 $(".third .wrapper .description h1").AniView(options);
 $(".third .wrapper .description h4").AniView();
+$(".third .wrapper .iphoneX").AniView();
 
 $(".menu .burger").add(".menu span").click(function () {
     $(".main-menu").css("display", "block");

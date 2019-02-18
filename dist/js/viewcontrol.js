@@ -1,5 +1,6 @@
 window.addEventListener("scroll", viewControl,false);
-
+var lastScrollTop = 0;
+var backgroundPos = 0;
 function /* Control scroll show view */ viewControl() {
     var scroll = $(window).scrollTop();
     var height = window.innerHeight;
@@ -19,6 +20,22 @@ function /* Control scroll show view */ viewControl() {
         $(".third .wrapper .description").fadeIn();
         $(".third .third-bgWrap").fadeIn();
         $(".main-bot").fadeOut();
+            /* trigger iphone scroll */
+            let addUp = ($("body").height() - height * 2) / 1000;
+            if(scroll > lastScrollTop) {
+                /* scroll down */
+                if(backgroundPos < 100) {
+                    backgroundPos+=addUp;
+                }
+            } else {
+                /* scroll up */
+                if(backgroundPos > 0) {
+                    backgroundPos-=addUp;
+                }
+            }
+            $(".third .wrapper .iphoneX .iphoneX-screen").css("background-position-y", backgroundPos + "%")
+        
+       
     } else if/* second screen */(scroll >= height) {
         $(".third .wrapper").css("opacity", "0");
 
@@ -45,4 +62,5 @@ function /* Control scroll show view */ viewControl() {
     } else if /*first screen */ (scroll < height) {
 
     }
+    lastScrollTop = scroll;
 }
