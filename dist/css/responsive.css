@@ -317,6 +317,35 @@
     }
 
 } 
+
+@media (max-width: 1150px) and (min-height: 700px), (max-width: 1050px) and (min-height: 500px) {
+    section.third div.wrapper {
+        display: block;
+    }
+    section.third .wrapper div.page-switcher {
+        top: 4em;
+        position: fixed;
+        transform: none;
+        height: fit-content;
+        right: 5em;
+        margin: 2em auto;
+        width: fit-content;
+    }
+    section.third .wrapper div.page-switcher button.page:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: .8em;
+    }
+    section.third .wrapper div.page-switcher::after {
+        position: inherit;
+        top: inherit;
+        left: inherit;
+        margin-top: -20px;
+        width: fit-content;
+        height: 1px;
+    }
+
+}
+
 @media (max-height: 710px) {
     .main-bot{
         /* display: none; */
@@ -629,3 +658,4 @@
         padding-top: 0;
     }
 }
+
