@@ -21,16 +21,16 @@ function /* Control scroll show view */ viewControl() {
         $(".third .third-bgWrap").fadeIn();
         $(".main-bot").fadeOut();
             /* trigger iphone scroll */
-            let addUp = ($("body").height() - height * 2) / 1000;
+            // let addUp = ($("body").height() - height * 2) / 1500;
             if(scroll > lastScrollTop) {
                 /* scroll down */
                 if(backgroundPos < 100) {
-                    backgroundPos+=addUp;
+                    backgroundPos+=3;
                 }
             } else {
                 /* scroll up */
                 if(backgroundPos > 0) {
-                    backgroundPos-=addUp;
+                    backgroundPos-=3;
                 }
             }
             $(".third .wrapper .iphoneX .iphoneX-screen").css("background-position-y", backgroundPos + "%")
