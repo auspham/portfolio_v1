@@ -287,3 +287,46 @@ section.third .wrapper .page-switcher button.page:hover{
     cursor: pointer;
     background: #733737;
 }
+
+section.third .wrapper .iphoneX {
+    background: url(../../assets/iphoneX.svg) no-repeat;
+    width: 64%;
+    height: 157%;
+    right: -9em;
+    position: relative;
+    top: -26%;
+    padding: 7em 3em;
+}
+
+section.third .wrapper .iphoneX .iphoneX-screen {
+    width: 80%;
+    height: 105%;
+    margin: 0 auto;
+    top: -1em;
+    position: relative;
+    border-radius: 40px;
+    background: url('../../assets/bitstat-prev.png') no-repeat;
+    background-position-y: 0%;
+    background-size: 100% auto;
+}
+section.third .wrapper .iphoneX .iphoneX-screen::after{
+    background: #fff;
+    content: "";
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 0 0 50px 50px;
+    z-index: -1;
+}
+section.third .wrapper .iphoneX .iphoneX-screen::before{ 
+    background: url(../../assets/camera.svg);
+    width: 66px;
+    content: "";
+    display: block;
+    height: 10px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
