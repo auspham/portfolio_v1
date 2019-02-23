@@ -254,3 +254,11 @@ button.btn-contact:focus, button.btn-contact:active{
   .nav-socialmedia a:hover, .nav-socialmedia-sub a:hover{
       cursor: pointer;
   }
+
+  .right-scroll{
+      z-index: 999;
+  }
+
+  .right-scroll .small:hover{
+      cursor: pointer;
+  }
