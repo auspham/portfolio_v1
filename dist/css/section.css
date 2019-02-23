@@ -113,6 +113,10 @@ section {
     overflow: hidden;
 
 }
+
+section.first{
+    overflow: inherit;
+}
 section.third {
     padding: 10em 20em;
     z-index: 1;
