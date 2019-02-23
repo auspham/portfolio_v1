@@ -61,6 +61,9 @@ function /* Control scroll show view */ viewControl() {
             $(".second .wrapper .description").fadeOut();
         }
         $(".main-bot").fadeIn();
+    } else if (scroll > height*.7) {
+        /* if just little bit passed first */ 
+        $(".first").css("z-index","0");
     } else if /*first screen */ (scroll < height) {
         $(".first").css("z-index","2");
         $(".second").css("z-index","1");
