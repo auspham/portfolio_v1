@@ -15,6 +15,7 @@ function /* Control scroll show view */ viewControl() {
         $(".small").removeClass("active")
         $(".small").eq(2).addClass("active");
         /* small screen 1-2 in scroll.js bc it's complex*/
+        $(".first").css("z-index", "-1")
         $(".second").css("z-index","1");
         $(".third").css("z-index","2");
         $(".third .wrapper .description").fadeIn();
@@ -41,6 +42,7 @@ function /* Control scroll show view */ viewControl() {
 
         $(".scroll").addClass("d-scroll");
         $("canvas").css("display","block");
+        $(".first").css("z-index", "-1")
         $(".third").css("z-index","1");
         $(".second").css("z-index","2");
         $(".third .third-bgWrap").fadeOut();
