@@ -241,3 +241,16 @@ button.btn-contact:focus, button.btn-contact:active{
       transform: translateY(-15px) translateX(-50%);
     }
   }
+
+  .nav-socialmedia a, .nav-socialmedia a:visited, .nav-socialmedia-sub a, .nav-socialmedia-sub a:visited{
+      color: black;
+
+  }
+  .nav-socialmedia, .nav-socialmedia-sub{
+      z-index: 999!important;
+      position: relative;
+  }
+
+  .nav-socialmedia a:hover, .nav-socialmedia-sub a:hover{
+      cursor: pointer;
+  }

@@ -60,7 +60,16 @@ function /* Control scroll show view */ viewControl() {
         }
         $(".main-bot").fadeIn();
     } else if /*first screen */ (scroll < height) {
+        $(".first").css("z-index","2");
+        $(".second").css("z-index","1");
+        $(".third").css("z-index","1");
 
     }
     lastScrollTop = scroll;
 }
+
+(function() /* intial view control */{
+    $(".first").css("z-index","2");
+    $(".second").css("z-index","1");
+    $(".third").css("z-index","1");
+})();
