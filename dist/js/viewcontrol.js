@@ -73,3 +73,4 @@ function /* Control scroll show view */ viewControl() {
     $(".second").css("z-index","1");
     $(".third").css("z-index","1");
 })();
+

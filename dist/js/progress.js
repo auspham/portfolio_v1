@@ -38,3 +38,19 @@ function set_ele(set_element)
 {
   check_element(set_element);
 }
+
+function setUpScreen(screen) {
+    var height = window.innerHeight;
+    switch (screen) {
+        case 1:
+            window.scrollTo(0,0);
+            break;
+        case 2:
+            window.scrollTo(0,height);
+            break;
+        case 3:
+            window.scrollTo(0,height*2);
+            break;
+
+    }
+}
