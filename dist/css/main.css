@@ -153,6 +153,9 @@ button.btn-contact:focus, button.btn-contact:active{
     height: 500px;
     background-size: 750px;
     z-index: 1;
+    -webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
 }
 @keyframes bounceR{
     0%{
@@ -253,6 +256,7 @@ button.btn-contact:focus, button.btn-contact:active{
 
   .nav-socialmedia a:hover, .nav-socialmedia-sub a:hover{
       cursor: pointer;
+      color: #000;
   }
 
   .right-scroll{

@@ -119,6 +119,7 @@ function scrollControl() {
 
 function universeScale() {
     let value = $(window).scrollTop()*0.01;
+    value = Math.round(value*100)/100;
     if(value >= 1) {
         if(value > 10) {
             $(".universe").css("transform", "scale(" + 10 + ")");

@@ -21,7 +21,7 @@ function check_element(ele)
     var prog_width=per_inc+Number(document.getElementById("progress_width").value);
     document.getElementById("progress_width").value=prog_width;
     $("#bar1").animate({width:prog_width+"%"},10,function(){
-      if(document.getElementById("bar1").style.width=="100%")
+      if(document.getElementById("bar1").style.width>="99%")
       {
         $(".progress").fadeOut("slow");
       }			
