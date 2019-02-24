@@ -256,6 +256,7 @@ button.btn-contact:focus, button.btn-contact:active{
 
   .nav-socialmedia a:hover, .nav-socialmedia-sub a:hover{
       cursor: pointer;
+      color: #000;
   }
 
   .right-scroll{
