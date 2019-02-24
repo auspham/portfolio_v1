@@ -156,6 +156,8 @@ button.btn-contact:focus, button.btn-contact:active{
     -webkit-backface-visibility: hidden;
    -moz-backface-visibility: hidden;
         backface-visibility: hidden;
+        position: fixed;
+
 }
 @keyframes bounceR{
     0%{
