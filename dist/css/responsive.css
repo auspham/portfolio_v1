@@ -659,6 +659,7 @@
         right: inherit!important;
         margin: 2em auto;
         width: fit-content;
+        display: block;
     }
     section.third .wrapper div.page-switcher button.page:not(:last-child) {
         margin-bottom: 0;
