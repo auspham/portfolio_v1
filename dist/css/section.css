@@ -249,11 +249,12 @@ section.third .wrapper{
     opacity: 0;
 }
 section.third .wrapper .page-switcher{
-    top: 50%;
     position: relative;
-    transform: translateY(-50%);
+    transform: translate(100%,10vh);
     height: fit-content;
-    right: -300%;
+    display: -webkit-inline-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
 }
 section.third .wrapper .page-switcher button.page{
     width: 40px;
