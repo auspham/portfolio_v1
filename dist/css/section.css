@@ -335,3 +335,15 @@ section.third .wrapper .iphoneX .iphoneX-screen::before{
     left: 50%;
     transform: translateX(-50%);
 }
+@-moz-document url-prefix() {
+    section .wrapper .description .viewsource-btn {
+        width: 660px;
+    }
+    section .wrapper .description h4.viewsource {
+        width: 190px;
+    }
+    section .wrapper .description h4.viewsource:nth-child(2) {
+        width: 130px;
+    }
+    
+}
