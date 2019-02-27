@@ -345,5 +345,25 @@ section.third .wrapper .iphoneX .iphoneX-screen::before{
     section .wrapper .description h4.viewsource:nth-child(2) {
         width: 130px;
     }
-    
+    @media (max-width: 700px) {
+        div.main {
+            width: 299px;
+        }
+        section.second .wrapper, section div.wrapper {
+            width: 100%;
+        }
+        section.second .wrapper h4, section div.wrapper h4 {
+            width: 100%;
+        }
+        section div.wrapper div.description div.viewsource-btn div.info-btn{
+            width: 312px;
+        }
+        section .wrapper .description h4.viewsource {
+            width: 100px;
+        }
+        section .wrapper .description h4.viewsource:nth-child(2) {
+            width: 118px;
+        }
+    }
+
 }
