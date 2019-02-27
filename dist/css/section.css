@@ -364,6 +364,12 @@ section.third .wrapper .iphoneX .iphoneX-screen::before{
         section .wrapper .description h4.viewsource:nth-child(2) {
             width: 118px;
         }
+        section.third .wrapper div.page-switcher{
+            width: 160px;
+        }
+        section.third .wrapper div.page-switcher::after {
+            width: 99%;
+        }
     }
 
 }
