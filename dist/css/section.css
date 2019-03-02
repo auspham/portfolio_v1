@@ -335,6 +335,44 @@ section.third .wrapper .iphoneX .iphoneX-screen::before{
     left: 50%;
     transform: translateX(-50%);
 }
+@supports (-ms-ime-align:auto)  {
+    /* same as firefox */
+    section .wrapper .description .viewsource-btn {
+        width: 660px;
+    }
+    section .wrapper .description h4.viewsource {
+        width: 190px;
+    }
+    section .wrapper .description h4.viewsource:nth-child(2) {
+        width: 130px;
+    }
+    @media (max-width: 700px) {
+        div.main {
+            width: 299px;
+        }
+        section.second .wrapper, section div.wrapper {
+            width: 100%;
+        }
+        section.second .wrapper h4, section div.wrapper h4 {
+            width: 100%;
+        }
+        section div.wrapper div.description div.viewsource-btn div.info-btn{
+            width: 326px;
+        }
+        section .wrapper .description h4.viewsource {
+            width: 100px;
+        }
+        section .wrapper .description h4.viewsource:nth-child(2) {
+            width: 118px;
+        }
+        section.third .wrapper div.page-switcher{
+            width: 168px;
+        }
+        section.third .wrapper div.page-switcher::after {
+            width: 99%;
+        }
+    }
+}
 @-moz-document url-prefix() {
     section .wrapper .description .viewsource-btn {
         width: 660px;
