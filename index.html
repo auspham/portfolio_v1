@@ -78,19 +78,36 @@
 
         </div>
         <h4>About me</h4>
-        <p>Hi, my name is <u>Austin.</u> </p>
+        <p>Hi, my name is <u>Austin</u> <small>(Thang Pham).</small></p>
         <p>I'm a second year computer science at 
                 RMIT. I have a strong experience in <u>UI/UX design.</u> </p>
         <p>My favorite languages are <u>Python</u>, <u>Typescript</u> and <u>Java</u></p>
         <hr />
+
         <h4>Projects</h4>
         <h5><strong>Bitstat</strong></h5>
         <p>BitStat is a site that <mark>visualises</mark> <mark>Bitcoin</mark> currency
          info and does currency exchange <u>real time</u> from Bitcoin (BTC) to selected currencies. </p>
         <p>Technology: <code>Python, React.JS, Chart.JS, AWS EC2, Google Cloud Storage, Google Cloud App Engine,...</code></p>
-         <p><em>A demo will show up if you visit this site on desktop.</em></p>
-         <p></p>
-        <p style="text-align: right"><i class="fab fa-github"></i><a href="https://github.com/rockmanvnx6/BitStat" target="_blank"> Github</a> <i class="fas fa-eye"></i> Open source</p>
+        <p></p>
+        <p style="text-align: right"><i class="fab fa-github"></i><a href="https://github.com/rockmanvnx6/BitStat" target="_blank"> Github</a> <i class="fas fa-eye-slash"></i> No live demo</p>
+
+        <h5><strong>Rostr</strong></h5>
+        <p>Rostering tool for managers with text message support using 
+            <u>React.JS</u>, <u>Node.JS</u>, <u>Express.JS</u>, <u>Mongo</u><br /><br />Won a second-price in hackathon and now is being test on <a href='https://www.spotless.com/' target='_blank'>Spotless</a>
+        </p>
+        <p>Technology: <code>Node.JS, React.JS, MongoDB, Express.JS, Passport.JS,...</code></p>
+        <p></p>
+        <p style="text-align: right"><i class="fab fa-github"></i><a href="https://github.com/rockmanvnx6/rostr" target="_blank"> Github</a> 
+            <i class='fas fa-eye'></i><a href='https://rostrlive.herokuapp.com/' target='_blank' data-toggle='tooltip' data-placement='bottom' title='See login details on Github'> Try Live Demo (See login details on Github)</a></p>
+
+        <h5><strong>Twitter-Heatmap</strong></h5>
+        <p>Twitter-Heatmap is a small project that visualises heatmap based on twitter <i>#hashtag</i>. <br /><br /> 
+            The website used <u>Flask</u>, <u>Google Map API</u>, <u>Google Big Query</u>, <u>Amazon EC2</u> to collect and display the heatmap.
+        </p>
+        <p>Technology: <code>Flask, Google Map API, Google Big Query, Amazon EC2,...</code></p>
+        <p></p>
+        <p style="text-align: right"><i class="fab fa-github"></i><a href="https://github.com/rockmanvnx6/Twitter-Heatmap" target="_blank"> Github</a> <i class="fas fa-eye-slash"></i> No live demo</p>
 
     </div>
     <div class="wip">
@@ -199,7 +216,7 @@
         <div class="wrapper">
             <div class="description">
                 <h1 data-av-animation="bounceInDown">About<br />me.</h1>
-                <h4 data-av-animation="slideInUp">Hi, my name is <u>Austin.</u> <br /><br /> I'm a second year computer
+                <h4 data-av-animation="slideInUp">Hi, my name is <u>Austin</u> <small>(Thang Pham)</small>. <br /><br /> I'm a second year computer
                     science at <br /> RMIT.
                     I have a strong experience in <u>UI/UX design</u>. <br /> <br /> My favorite languages are <u>Python,
                         Typescript and Java</u> </h4>
@@ -233,17 +250,17 @@
                 <h1 data-av-animation="bounceInDown">Proj<br />ects.</h1>
                 <h4 data-av-animation="slideInUp">
                     <i class="fas fa-chevron-left"></i>
-                    <strong>BITSTAT</strong>
+                    <strong class="project-name">BITSTAT</strong>
                     <i class="fas fa-chevron-right"></i>
                 </h4>
-                <h4 data-av-animation="slideInUp"> BitStat is a site that <u>visualises</u> <u>Bitcoin</u>
+                <h4 data-av-animation="slideInUp" class="project-content"> BitStat is a site that <u>visualises</u> <u>Bitcoin</u>
                     currency info and does currency exchange <u>real time</u>
                     from Bitcoin (BTC) to selected currencies.
                 </h4>
                 <div class="viewsource-btn">
                     <div class="info-btn">
-                            <h4 data-av-animation="slideInUp" class="viewsource"><i class="fas fa-eye"></i> Open Source</h4>
-                            <h4 data-av-animation="slideInUp" class="viewsource"><i class="fab fa-github"></i> Github</h4>
+                            <h4 data-av-animation="slideInUp" class="viewsource project-live"><i class="fas fa-eye-slash"></i> No Live Demo</h4>
+                            <h4 data-av-animation="slideInUp" class="viewsource project-git"><a href="https://github.com/rockmanvnx6/:project" target="_blank"><i class="fab fa-github"></i> Github</a></h4>
                     </div>
                     <button class="btn btn-eclipse"> Read More</button>
                 </div>   
@@ -269,12 +286,11 @@
     </div>
 
     <div class="right-scroll">
-        <div class="small active" onclick="setUpScreen(1)"></div>
-        <div class="small" onclick="setUpScreen(2)"></div>
-        <div class="small" onclick="setUpScreen(3)"></div>
-        <div class="small"></div>
-        <div class="small"></div>
-
+        <div class="small active" onclick="setUpScreen(1)" data-toggle="tooltip" data-placement="left" title="Main view"></div>
+        <div class="small" onclick="setUpScreen(2)" data-toggle="tooltip" data-placement="left" title="About me"></div>
+        <div class="small" onclick="setUpScreen(3)" data-toggle="tooltip" data-placement="left" title="Projects"></div>
+        <div class="small" data-toggle="tooltip" data-placement="right" title="Work in progress"></div>
+        <div class="small" data-toggle="tooltip" data-placement="right" title="Work in progress"></div>
     </div>
 
     <div class="scroll"></div>
@@ -284,7 +300,7 @@
     <script src="./dist/js/control.js"></script>
     <script src="./dist/js/responsive.js"></script>
     <script src="./dist/js/viewcontrol.js"></script>
-
+    <script src="./dist/js/projects.js"></script>
 
 </body>
 
