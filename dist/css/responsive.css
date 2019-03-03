@@ -595,9 +595,10 @@
         width: fit-content;
     }
     section.second .wrapper h4, section div.wrapper h4 {
-        width: fit-content;
+        width: 100%;
         text-align: center;
     }
+
     section.second .wrapper h1, section div.wrapper h1{
         text-align: center;
         font-size: 4em;
@@ -646,8 +647,17 @@
         overflow: hidden;
         margin: 0 auto;
         text-align: center;
-        width: 280px;
+        width: 326px;
     }
+
+    section .wrapper .description h4.viewsource {
+        width: 166px;
+    }
+    section .wrapper .description h4.viewsource:nth-child(2) {
+        width: 118px;
+        float: left;
+    }
+    
     section.third div.wrapper {
         display: block;
     }
@@ -655,10 +665,10 @@
         top: 0;
         position: relative;
         transform: none;
-        height: fit-content;
+        height: 50px;
         right: inherit!important;
         margin: 2em auto;
-        width: fit-content;
+        width: 168px;
         display: block;
     }
     section.third .wrapper div.page-switcher button.page:not(:last-child) {
@@ -667,10 +677,10 @@
     }
     section.third .wrapper div.page-switcher::after {
         position: inherit;
-        top: inherit;
+        top: 0;
         left: inherit;
         margin-top: -20px;
-        width: 100%;
+        width: 93%;
         height: 1px;
     }
 }

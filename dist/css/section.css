@@ -223,18 +223,28 @@ section .cloud .cloud6 {
 
 section .wrapper .description h4 strong{
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 section .wrapper .description h4.viewsource {
     display: inline;
-    width: fit-content;
     line-height: 2.8em;
     float: right;
     margin-right: 1em;
 }
 
 section .wrapper .description .viewsource-btn {
-    width: 655px;
+    width: 150%;
+}
+section .wrapper .description .viewsource-btn .info-btn {
+    width: 90%;
+}
+
+section .wrapper .description h4.viewsource {
+    width: 196px;
+}
+section .wrapper .description div.viewsource-btn div.info-btn .av-container:nth-child(2) h4.viewsource{
+    width: 120px;
 }
 
 section.third div.wrapper .description::after {
@@ -335,6 +345,20 @@ section.third .wrapper .iphoneX .iphoneX-screen::before{
     left: 50%;
     transform: translateX(-50%);
 }
+section div.wrapper div.description div.viewsource-btn div.info-btn a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+section div.wrapper div.description div.viewsource-btn div.info-btn a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+
+
+
 @supports (-ms-ime-align:auto)  {
     section .wrapper .description .viewsource-btn {
         width: 150%;
@@ -380,7 +404,7 @@ section.third .wrapper .iphoneX .iphoneX-screen::before{
             width: 168px;
         }
         section.third .wrapper div.page-switcher::after {
-            width: 99%;
+            width: 96%;
         }
     }
 }
@@ -429,7 +453,7 @@ section.third .wrapper .iphoneX .iphoneX-screen::before{
             width: 168px;
         }
         section.third .wrapper div.page-switcher::after {
-            width: 99%;
+            width: 93%;
         }
     }
 
