@@ -390,6 +390,9 @@
         width: 200px;
         height: 30px;
     }
+    section .wrapper .description div.viewsource-btn div.info-btn {
+        width: 56%;
+    }
 }
 
 @media (max-height: 710px) {
