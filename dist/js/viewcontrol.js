@@ -1,6 +1,7 @@
 window.addEventListener("scroll", viewControl,false);
 var lastScrollTop = 0;
 var backgroundPos = 0;
+var tooltipShowed = 0;
 function /* Control scroll show view */ viewControl() {
     var scroll = $(window).scrollTop();
     var height = window.innerHeight;
@@ -38,10 +39,13 @@ function /* Control scroll show view */ viewControl() {
         
         /* show tooltip for screen < 700 project-content*/
         if(window.innerWidth <= 700) {
-            $(".project-content").mouseover();
-            setInterval(()=>{
-                $(".project-content").mouseleave();
-            },2000)
+            if(tooltipShowed == 0) {
+                $(".project-content").mouseover();
+                setInterval(()=>{
+                    $(".project-content").mouseleave();
+                },2000);
+                tooltipShowed = 1;
+            }
         }
        
     } else if/* second screen */(scroll >= height) {
