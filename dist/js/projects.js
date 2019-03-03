@@ -6,6 +6,7 @@ $(".page").click(function () {
     $(".page").removeClass("page-active");
     $(this).addClass("page-active")
     pageView = this.innerHTML;
+    $(".page-switcher").hide().fadeIn('fast');    //debug for chrome;
     setUpContent(pageView);
 });
 
