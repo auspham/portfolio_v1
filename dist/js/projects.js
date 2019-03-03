@@ -33,14 +33,14 @@ function setUpContent(pageView) {
             live.innerHTML = "<a href='https://rostrlive.herokuapp.com/' target='_blank' data-toggle='tooltip' data-placement='bottom' title='See login details on Github'><i class='fas fa-eye'></i> Try Live Demo</a>";
             $('[data-toggle="tooltip"]').tooltip();
             git.setAttribute("href", git.getAttribute("href").replace(prevName, projectName.innerHTML));
-            $(".iphoneX").fadeOut();
+            $(".iphoneX").hide();
             break;
         case "3":
             projectName.innerHTML = "Twitter-Heatmap";
             content.innerHTML = "Twitter-Heatmap is a small project that visualises heatmap based on twitter <i>#hashtag</i>. <br /><br /> The website used <u>Flask</u>, <u>Google Map API</u>, <u>Google Big Query</u>, <u>Amazon EC2</u> to collect and display the heatmap."
             live.innerHTML = "<i class='fas fa-eye-slash'></i> No Live Demo";
             git.setAttribute("href", git.getAttribute("href").replace(prevName, projectName.innerHTML));
-            $(".iphoneX").fadeOut();
+            $(".iphoneX").hide();
             break;
     }
 }
