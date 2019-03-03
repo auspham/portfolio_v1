@@ -29,8 +29,8 @@ function setUpContent(pageView) {
 
         case "2":
             projectName.innerHTML = "rostr";
-            content.innerHTML = "Rostering tool for managers with text message support using <u>ReactJS</u>, <u>NodeJS</u>, <u>ExpressJS</u>, <u>Mongo</u><br /><br />Won a second-price in hackathon and now is being test on <a href='https://www.spotless.com/' target='_blank'>Spotless</a>";
-            live.innerHTML = "<a href='https://rostrlive.herokuapp.com/' target='_blank' data-toggle='tooltip' data-placement='bottom' title='See login details on github'><i class='fas fa-eye'></i> Try Live Demo</a>";
+            content.innerHTML = "Rostering tool for managers with text message support using <u>React.JS</u>, <u>Node.JS</u>, <u>Express.JS</u>, <u>Mongo</u><br /><br />Won a second-price in hackathon and now is being test on <a href='https://www.spotless.com/' target='_blank'>Spotless</a>";
+            live.innerHTML = "<a href='https://rostrlive.herokuapp.com/' target='_blank' data-toggle='tooltip' data-placement='bottom' title='See login details on Github'><i class='fas fa-eye'></i> Try Live Demo</a>";
             $('[data-toggle="tooltip"]').tooltip();
             git.setAttribute("href", git.getAttribute("href").replace(prevName, projectName.innerHTML));
             $(".iphoneX").fadeOut();
