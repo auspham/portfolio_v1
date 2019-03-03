@@ -18,3 +18,4 @@ $(".closebtn").click(function () {
     $(".main-menu").css("display", "none");
 
 })
+

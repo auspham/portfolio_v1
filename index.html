@@ -78,7 +78,7 @@
 
         </div>
         <h4>About me</h4>
-        <p>Hi, my name is <u>Austin.</u> </p>
+        <p>Hi, my name is <u>Austin</u> <small>(Thang Pham).</small></p>
         <p>I'm a second year computer science at 
                 RMIT. I have a strong experience in <u>UI/UX design.</u> </p>
         <p>My favorite languages are <u>Python</u>, <u>Typescript</u> and <u>Java</u></p>
@@ -199,7 +199,7 @@
         <div class="wrapper">
             <div class="description">
                 <h1 data-av-animation="bounceInDown">About<br />me.</h1>
-                <h4 data-av-animation="slideInUp">Hi, my name is <u>Austin.</u> <br /><br /> I'm a second year computer
+                <h4 data-av-animation="slideInUp">Hi, my name is <u>Austin</u> <small>(Thang Pham)</small>. <br /><br /> I'm a second year computer
                     science at <br /> RMIT.
                     I have a strong experience in <u>UI/UX design</u>. <br /> <br /> My favorite languages are <u>Python,
                         Typescript and Java</u> </h4>
@@ -269,12 +269,11 @@
     </div>
 
     <div class="right-scroll">
-        <div class="small active" onclick="setUpScreen(1)"></div>
-        <div class="small" onclick="setUpScreen(2)"></div>
-        <div class="small" onclick="setUpScreen(3)"></div>
-        <div class="small"></div>
-        <div class="small"></div>
-
+        <div class="small active" onclick="setUpScreen(1)" data-toggle="tooltip" data-placement="left" title="Main view"></div>
+        <div class="small" onclick="setUpScreen(2)" data-toggle="tooltip" data-placement="left" title="About me"></div>
+        <div class="small" onclick="setUpScreen(3)" data-toggle="tooltip" data-placement="left" title="Projects"></div>
+        <div class="small" data-toggle="tooltip" data-placement="right" title="Work in progress"></div>
+        <div class="small" data-toggle="tooltip" data-placement="right" title="Work in progress"></div>
     </div>
 
     <div class="scroll"></div>
