@@ -302,7 +302,10 @@
         background: url(../../assets/self.png) no-repeat -10%;
     }
     section .wrapper .description div.viewsource-btn div.info-btn {
-        width: 123%!important;
+        width: 116%!important;
+    }
+    section .wrapper .description div.viewsource-btn div.info-btn div.av-container:nth-child(2) h4.viewsource {
+        width: 85px
     }
 }
 
