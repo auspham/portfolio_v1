@@ -336,7 +336,6 @@ section.third .wrapper .iphoneX .iphoneX-screen::before{
     transform: translateX(-50%);
 }
 @supports (-ms-ime-align:auto)  {
-    /* same as firefox */
     section .wrapper .description .viewsource-btn {
         width: 660px;
     }
@@ -375,15 +374,26 @@ section.third .wrapper .iphoneX .iphoneX-screen::before{
 }
 @-moz-document url-prefix() {
     section .wrapper .description .viewsource-btn {
-        width: 660px;
+        width: 150%;
     }
+    section .wrapper .description .viewsource-btn .info-btn {
+        width: 90%;
+    }
+
     section .wrapper .description h4.viewsource {
-        width: 190px;
+        width: 196px;
     }
-    section .wrapper .description h4.viewsource:nth-child(2) {
-        width: 130px;
+    section .wrapper .description div.viewsource-btn div.info-btn .av-container:nth-child(2) h4.viewsource{
+        width: 120px;
     }
+
     @media (max-width: 700px) {
+        section .wrapper .description .viewsource-btn .info-btn {
+            float: inherit;
+            overflow: hidden;
+            width: 376px;
+            margin: 0 auto;
+        }
         div.main {
             width: 299px;
         }
@@ -397,10 +407,11 @@ section.third .wrapper .iphoneX .iphoneX-screen::before{
             width: 326px;
         }
         section .wrapper .description h4.viewsource {
-            width: 100px;
+            width: 166px;
         }
         section .wrapper .description h4.viewsource:nth-child(2) {
             width: 118px;
+            float: left;
         }
         section.third .wrapper div.page-switcher{
             width: 168px;
