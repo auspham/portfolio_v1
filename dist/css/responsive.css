@@ -301,6 +301,9 @@
         width: 1230px;
         background: url(../../assets/self.png) no-repeat -10%;
     }
+    section .wrapper .description div.viewsource-btn div.info-btn {
+        width: 123%!important;
+    }
 }
 
 @media (max-width: 1200px) and (min-height: 700px) and (max-height: 800px){
