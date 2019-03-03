@@ -29,18 +29,18 @@ function setUpContent(pageView) {
 
         case "2":
             projectName.innerHTML = "rostr";
-            content.innerHTML = "Rostering tool for managers with text message support using <u>React.JS</u>, <u>Node.JS</u>, <u>Express.JS</u>, <u>Mongo</u><br /><br />Won a second-price in hackathon and now is being test on <a href='https://www.spotless.com/' target='_blank'>Spotless</a>";
+            content.innerHTML = "Rostering tool for managers with text message support using <u>React.JS</u>, <u>Node.JS</u>, <u>Express.JS</u>, <u>Mongo</u><br /><br />Won a second-price in Downer hackathon 2018 and now is being test on <a href='https://www.spotless.com/' target='_blank'>Spotless</a>";
             live.innerHTML = "<a href='https://rostrlive.herokuapp.com/' target='_blank' data-toggle='tooltip' data-placement='bottom' title='See login details on Github'><i class='fas fa-eye'></i> Try Live Demo</a>";
             $('[data-toggle="tooltip"]').tooltip();
             git.setAttribute("href", git.getAttribute("href").replace(prevName, projectName.innerHTML));
             $(".iphoneX").fadeOut();
             break;
         case "3":
-
             projectName.innerHTML = "Twitter-Heatmap";
             content.innerHTML = "Twitter-Heatmap is a small project that visualises heatmap based on twitter <i>#hashtag</i>. <br /><br /> The website used <u>Flask</u>, <u>Google Map API</u>, <u>Google Big Query</u>, <u>Amazon EC2</u> to collect and display the heatmap."
             live.innerHTML = "<i class='fas fa-eye-slash'></i> No Live Demo";
             git.setAttribute("href", git.getAttribute("href").replace(prevName, projectName.innerHTML));
+            $(".iphoneX").fadeOut();
             break;
     }
 }
