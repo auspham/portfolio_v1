@@ -8,6 +8,16 @@
     section div.cloud div.cloud2{
         bottom: -7em;
     }
+    section .wrapper .description h4.viewsource {
+        width: 166px;
+    }
+    section .wrapper .description h4.viewsource:nth-child(2) {
+        width: 118px;
+        float: left;
+    }
+    section div.wrapper div.description div.viewsource-btn div.info-btn{
+        width: 326px!important;
+    }
 
 }
 @media (max-width: 450px) and (max-height: 700px) {
@@ -347,6 +357,10 @@
         border-radius: 26px;
     }
 
+    section .wrapper div.description div.viewsource-btn div.info-btn {
+        width: 106%;
+    }
+
 } 
 
 @media (max-width: 1150px) and (min-height: 700px), (max-width: 1050px) and (min-height: 500px) {
@@ -650,7 +664,7 @@
         overflow: hidden;
         margin: 0 auto;
         text-align: center;
-        width: 326px;
+        width: 100%;
     }
 
     section .wrapper .description h4.viewsource {
@@ -685,6 +699,11 @@
         margin-top: -20px;
         width: 93%;
         height: 1px;
+    }
+
+    section.third .wrapper .description .project-content {
+        height: 68px;
+        overflow: scroll;
     }
 }
 

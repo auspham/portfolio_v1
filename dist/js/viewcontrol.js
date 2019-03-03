@@ -21,21 +21,28 @@ function /* Control scroll show view */ viewControl() {
         $(".third .wrapper .description").fadeIn();
         $(".third .third-bgWrap").fadeIn();
         $(".main-bot").fadeOut();
-            /* trigger iphone scroll */
+        /* trigger iphone scroll */
             // let addUp = ($("body").height() - height * 2) / 1500;
-            if(scroll > lastScrollTop) {
-                /* scroll down */
-                if(backgroundPos < 100) {
-                    backgroundPos+=3;
-                }
-            } else {
-                /* scroll up */
-                if(backgroundPos > 0) {
-                    backgroundPos-=3;
-                }
+        if(scroll > lastScrollTop) {
+            /* scroll down */
+            if(backgroundPos < 100) {
+                backgroundPos+=3;
             }
-            $(".third .wrapper .iphoneX .iphoneX-screen").css("background-position-y", backgroundPos + "%")
+        } else {
+            /* scroll up */
+            if(backgroundPos > 0) {
+                backgroundPos-=3;
+            }
+        }
+        $(".third .wrapper .iphoneX .iphoneX-screen").css("background-position-y", backgroundPos + "%")
         
+        /* show tooltip for screen < 700 project-content*/
+        if(window.innerWidth <= 700) {
+            $(".project-content").mouseover();
+            setInterval(()=>{
+                $(".project-content").mouseleave();
+            },2000)
+        }
        
     } else if/* second screen */(scroll >= height) {
         $(".third .wrapper").css("opacity", "0");
