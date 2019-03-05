@@ -24,7 +24,7 @@ function setUpContent(pageView) {
             content.innerHTML = "BitStat is a site that <u>visualises</u> <u>Bitcoin</u> currency info and does currency exchange <u>real time</u> from Bitcoin (BTC) to selected currencies.";
             live.innerHTML = "<i class='fas fa-eye-slash'></i> No live Demo";
             git.setAttribute("href", git.getAttribute("href").replace(prevName, projectName.innerHTML));
-            window.innerWidth > 700 ? $(".iphoneX").fadeIn() : null ;
+            window.innerWidth > 1150 ? $(".iphoneX").fadeIn() : null ;
             break;
 
         case "2":
