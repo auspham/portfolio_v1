@@ -8,4 +8,4 @@ function responsive() {
 }
 
 responsive();
-alert(window.innerWidth+ ":" + window.innerHeight)
+// alert(window.innerWidth+ ":" + window.innerHeight)
