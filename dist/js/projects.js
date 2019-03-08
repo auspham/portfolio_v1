@@ -1,3 +1,7 @@
+// TODO: 
+// - Switch Rostr up first.
+// - Edit content, remove the technology for each.
+
 var pageView = 1; // by default it's BitStat
 var defaultProject = "bitstat";
 $(".project-git a")[0].setAttribute("href", $(".project-git a")[0].getAttribute("href").replace(":project",defaultProject));
@@ -24,12 +28,12 @@ function setUpContent(pageView) {
             content.innerHTML = "BitStat is a site that <u>visualises</u> <u>Bitcoin</u> currency info and does currency exchange <u>real time</u> from Bitcoin (BTC) to selected currencies.";
             live.innerHTML = "<i class='fas fa-eye-slash'></i> No live Demo";
             git.setAttribute("href", git.getAttribute("href").replace(prevName, projectName.innerHTML));
-            window.innerWidth > 700 ? $(".iphoneX").fadeIn() : null ;
+            window.innerWidth > 1150 ? $(".iphoneX").fadeIn() : null ;
             break;
 
         case "2":
             projectName.innerHTML = "rostr";
-            content.innerHTML = "Rostering tool for managers with text message support using <u>React.JS</u>, <u>Node.JS</u>, <u>Express.JS</u>, <u>Mongo</u><br /><br />Won a second-price in Downer hackathon 2018 and now is being test on <a href='https://www.spotless.com/' target='_blank'>Spotless</a>";
+            content.innerHTML = "Web based rostering tool for managers with text message support.<br/><br/> Won a <u>second-price in Downer hackathon 2018</u> and now is being test on <a href='https://www.spotless.com/' target='_blank'>Spotless</a>";
             live.innerHTML = "<a href='https://rostrlive.herokuapp.com/' target='_blank' data-toggle='tooltip' data-placement='bottom' title='See login details on Github'><i class='fas fa-eye'></i> Try Live Demo</a>";
             $('[data-toggle="tooltip"]').tooltip();
             git.setAttribute("href", git.getAttribute("href").replace(prevName, projectName.innerHTML));
@@ -37,7 +41,7 @@ function setUpContent(pageView) {
             break;
         case "3":
             projectName.innerHTML = "Twitter-Heatmap";
-            content.innerHTML = "Twitter-Heatmap is a small project that visualises heatmap based on twitter <i>#hashtag</i>. <br /><br /> The website used <u>Flask</u>, <u>Google Map API</u>, <u>Google Big Query</u>, <u>Amazon EC2</u> to collect and display the heatmap."
+            content.innerHTML = "Twitter-Heatmap is a small <u>cloud project</u> that visualises heatmap and statistics based on twitter <i>#hashtag</i>."
             live.innerHTML = "<i class='fas fa-eye-slash'></i> No Live Demo";
             git.setAttribute("href", git.getAttribute("href").replace(prevName, projectName.innerHTML));
             $(".iphoneX").hide();
