@@ -53,4 +53,5 @@ function setUpScreen(screen) {
             break;
 
     }
+    $(".main-menu").fadeOut("fast");
 }
