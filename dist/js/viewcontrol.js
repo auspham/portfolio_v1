@@ -7,7 +7,21 @@ function /* Control scroll show view */ viewControl() {
     var height = window.innerHeight;
     let moonscroll;
     moonscroll = (-window.innerHeight + scroll*1.2);
-    if /* third screen */(scroll >= height * 2) {
+    if /* fourth screen */ (scroll >= height*4) {
+        $(".menu").removeClass("d-menu");
+        $(".right-scroll").removeClass("d-rightscroll");
+        $(".small").removeClass("active")
+        $(".small").eq(3).addClass("active");
+        $(".first").css("z-index", "-1")
+        $(".second").css("z-index","1");
+        $(".third").css("z-index","1");
+        $(".fourth").css("z-index", "2");
+        $("section:not('.fourth') .wrapper").fadeOut();
+        $(".fourth .wrapper").fadeIn();
+
+        $(".fourth .wrapper .description").fadeIn();
+        $(".fourth .third-bgWrap").fadeIn();
+    } else if /* third screen */(scroll >= height * 2) {
         $(".third .wrapper").css("opacity", "1");
         $("canvas").css("display","none");
         $(".menu").removeClass("d-menu");
@@ -19,6 +33,9 @@ function /* Control scroll show view */ viewControl() {
         $(".first").css("z-index", "-1")
         $(".second").css("z-index","1");
         $(".third").css("z-index","2");
+        $("section:not('.third') .wrapper").fadeOut();
+        $(".third .wrapper").fadeIn();
+
         $(".third .wrapper .description").fadeIn();
         $(".third .third-bgWrap").fadeIn();
         $(".main-bot").fadeOut();
@@ -56,8 +73,8 @@ function /* Control scroll show view */ viewControl() {
         $(".first").css("z-index", "-1")
         $(".third").css("z-index","1");
         $(".second").css("z-index","2");
-        $(".third .third-bgWrap").fadeOut();
-        $(".third .wrapper .description").fadeOut();
+        $("section:not('.second') .wrapper").fadeOut();
+        $(".second .wrapper").fadeIn();
         if(height - scroll < -900) {
             $(".moon").css({
                 transform: "translateY(" + (height - scroll)*1.5 +  "px) translateX(-50%)"

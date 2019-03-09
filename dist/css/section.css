@@ -110,13 +110,13 @@ section.second .moon .fig{
 }
 
 body{
-    height: 500vh;
+    height: 700vh;
 }
 
 section {
     position: relative;
     overflow: hidden;
-
+    color: #000;
 }
 
 section.first{
@@ -136,7 +136,14 @@ section.second {
     top: 0;
     position: fixed;
 }
-
+section.fourth {
+    padding: 10em 20em;
+    z-index: 1;
+    color: #000;
+    position: fixed;
+    top: 0;
+    width: 90%;
+}
 section .wrapper .description {
     display: none;
     transform: scale(1);
