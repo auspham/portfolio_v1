@@ -234,10 +234,15 @@ section .wrapper .description h4.viewsource {
 }
 
 section .wrapper .description .viewsource-btn {
-    width: 150%;
+    /* width: 150%; */
+    width: 683px;
+    overflow: hidden;
 }
 section .wrapper .description .viewsource-btn .info-btn {
-    width: 90%;
+    /* width: 90%; */
+    width: 386px;
+    overflow: hidden;
+    float: right
 }
 
 section .wrapper .description h4.viewsource {

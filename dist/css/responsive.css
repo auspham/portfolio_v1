@@ -207,7 +207,7 @@
         background: url(../../assets/self.png) no-repeat -10%;
     }
     section div.wrapper div.description div.viewsource-btn {
-        width: 500px;
+        width: 520px;
         overflow: hidden;
     }
     section div.wrapper .description div.viewsource-btn div.info-btn {
@@ -269,15 +269,20 @@
     }
 
     section .wrapper div.description div.viewsource-btn {
-        width: 600px;
+        width: 640px;
+        overflow: hidden;
     }
+
 
     section.third div.wrapper div.iphoneX div.iphoneX-screen{
         height: 112%;
         border-radius: 26px;
     }
 
-
+    section .wrapper div.description div.viewsource-btn div.info-btn {
+        width: 369px;
+        float: right;
+    }
 
 } 
 
@@ -370,12 +375,19 @@
         padding: .5em 2.4em;
         font-size: 1.3em;
     }
+    section .wrapper div.description div.viewsource-btn div.info-btn{
+        width: 282px;
+    }
     section .wrapper div.description h4.viewsource{
         line-height: 4.5em;
+        width: 146px;
     }
     section .wrapper div.description div.viewsource-btn{
-        width: 579px;
+        width: 520px;
         overflow: hidden;
+    }
+    section .wrapper div.description div.viewsource-btn div.info-btn .av-container:nth-child(2) h4.viewsource {
+        width: 81px;
     }
     section.third div.third-bgWrap {
         background-size: 127em 99em;
@@ -705,7 +717,7 @@
         float: left;
     }
     section div.wrapper div.description div.viewsource-btn div.info-btn{
-        width: 95%;
+        width: 328px;
         margin: 0 auto;
         position: relative;
         overflow: hidden;
