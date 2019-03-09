@@ -363,6 +363,14 @@ section div.wrapper div.description div.viewsource-btn div.info-btn a:hover{
 }
 
 
+a.project-read-btn:visited, a.project-read-btn:hover, a.project-read-btn:active { 
+    text-decoration: none!important;
+    color: black;
+}
+
+a.project-read-btn .btn:focus {
+    box-shadow: none;
+ }
 
 @supports (-ms-ime-align:auto)  {
     section.third .wrapper div.page-switcher{

@@ -197,6 +197,11 @@ button.btn-contact:focus, button.btn-contact:active{
     background: url(../../assets/d-scroll.svg) no-repeat;
     z-index: 2;
 }
+
+.btn:focus{
+    box-shadow: none!important;
+    background: rgba(0,0,0,.075);
+}
 @-moz-keyframes bounceX {
     0%, 20%, 50%, 80%, 100% {
       -moz-transform: translateY(0) translateX(-50%);
