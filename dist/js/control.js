@@ -2,11 +2,11 @@ var options = {
     animateThreshold: 400,
     scrollPollInterval: 20
 }
-$(".second .wrapper .description h1").AniView(options);
-$(".second .wrapper .description h4").AniView();
-$(".third .wrapper .description h1").AniView(options);
-$(".third .wrapper .description h4").AniView();
+$("section:not(.first) .wrapper .description h1").AniView(options);
+$("section:not(.first) .wrapper .description h4").AniView();
+
 $(".third .wrapper .iphoneX").AniView();
+$(".fourth .wrapper .description h2").AniView();
 
 $(".menu .burger").add(".menu span").click(function () {
     $(".main-menu").css("display", "block");

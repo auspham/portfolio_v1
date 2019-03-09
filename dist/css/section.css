@@ -157,7 +157,7 @@ section .wrapper .description {
 section.third .third-bgWrap{
     background: url("../../assets/bg-cloud.svg") no-repeat;
     width: 105vw;
-    height: 100vh;
+    height: 700vh;
     top: 0;
     left: -5%;
 
@@ -249,7 +249,7 @@ section .wrapper .description .viewsource-btn {
     /* width: 150%; */
     width: 683px;
     overflow: hidden;
-    padding-bottom: 2px;
+    padding-bottom: 6px;
 }
 section .wrapper .description .viewsource-btn .info-btn {
     /* width: 90%; */
@@ -375,7 +375,36 @@ section div.wrapper div.description div.viewsource-btn div.info-btn a:hover{
     text-decoration: underline;
 }
 
+section.fourth div.fourth-bgWrap {
+    background: url("../../assets/city.svg");
+    width: 105vw;
+    height: 700vh;
+    top: 0;
+    left: -5%;
+    display: none;
+    position: fixed;
+    background-size: 87em 142vh;
+}
 
+section.fourth .wrapper {
+    position: relative;
+    width: 100%;
+}
+
+section.fourth div.wrapper div.description{
+    text-align: center;
+}
+
+section.fourth div.wrapper div.description h1{
+    font-size: 4em;
+}
+section.fourth div.wrapper div.description h2{
+    font-weight: 600;
+
+}
+section.fourth .wrapper .btn-eclipse {
+    float:none;
+}
 a.project-read-btn:visited, a.project-read-btn:hover, a.project-read-btn:active { 
     text-decoration: none!important;
     color: black;

@@ -575,7 +575,7 @@
     section.third div.third-bgWrap{
         background: url(../../assets/bg-cloud.svg) no-repeat 0% 50%;
         width: 137%;
-        height: 135%;
+        height: 180%;
         background-size: 209% 141%;
 
     }
@@ -649,6 +649,10 @@
 
     section.third .wrapper div.iphoneX {
         display: none;
+    }
+    section.fourth div.wrapper div.description h2{
+        font-weight: 500;
+        font-size: 1.5em;
     }
 }
 

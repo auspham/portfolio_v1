@@ -36,8 +36,6 @@ function scrollAnimate() {
         $(".moon").css({transform: "translateY(" + moonscroll +  "px) translateX(-50%)"});
         $(".credit").fadeOut();
        
-        $(".second .wrapper .description").fadeOut();
-        $(".third .wrapper .description").fadeOut();
 
 
     } else if (moonscroll >= 0 && moonscroll <= window.innerHeight /* change depends on moon*/){
@@ -56,6 +54,7 @@ function cloudFly() {
     var height = window.innerHeight;
     var cloud = height-scroll;
     var bgcloud = 3*height - scroll;
+
     $(".cloud").css("display", "block");
     if(scroll < height) {
         $(".cloud1").css("transform","translateY(" + cloud*1.1 + "px)");
@@ -72,9 +71,10 @@ function cloudFly() {
         $(".cloud4").css("transform","translateY(" + cloud*1.2 + "px)");
         $(".cloud5").css("transform","translateY(" + cloud*.8 + "px)");
         $(".cloud6").css("transform","translateY(" + cloud*1.4 + "px)");
-        if (scroll <= height * 3 && bgcloud > 0) {
+        if (scroll <= height * 7 && bgcloud > -300) {
             $(".third-bgWrap").css("transform","translateY(" + bgcloud + "px)");
         }
+
     } else {
         cloud = 0;
         $(".cloud1").css("transform","translateY(" + cloud*1.1 + "px)");
