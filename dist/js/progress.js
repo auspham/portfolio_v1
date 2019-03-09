@@ -44,18 +44,16 @@ function setUpScreen(screen) {
     var height = window.innerHeight;
     switch (screen) {
         case 1:
-            // window.scroll(0,0);
             window.scroll({top: 0, left: 0, behavior: "smooth"})
             break;
         case 2:
-            // window.scrollTo(0,height);
             window.scroll({top: height, left: 0, behavior: "smooth"})
-
             break;
         case 3:
-            // window.scrollTo(0,height*2);
             window.scroll({top: height*2, left: 0, behavior: "smooth"})
-
+            break;
+        case 4:
+            window.scroll({top: height*3.5, left: 0, behavior: "smooth"})
             break;
 
     }
