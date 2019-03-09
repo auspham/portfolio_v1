@@ -2,28 +2,16 @@ window.addEventListener("scroll", viewControl,false);
 var lastScrollTop = 0;
 var backgroundPos = 0;
 var tooltipShowed = 0;
+var screen = 1; // default first screen
 function /* Control scroll show view */ viewControl() {
     var scroll = $(window).scrollTop();
     var height = window.innerHeight;
     let moonscroll;
     moonscroll = (-window.innerHeight + scroll*1.2);
     if /* third screen */(scroll >= height * 2) {
-        $(".third .wrapper").css("opacity", "1");
-        $("canvas").css("display","none");
-        $(".menu").removeClass("d-menu");
-        $(".right-scroll").removeClass("d-rightscroll");
-        $(".scroll").removeClass("d-scroll");
-        $(".small").removeClass("active")
-        $(".small").eq(2).addClass("active");
-        /* small screen 1-2 in scroll.js bc it's complex*/
-        $(".first").css("z-index", "-1")
-        $(".second").css("z-index","1");
-        $(".third").css("z-index","2");
-        $(".third .wrapper .description").fadeIn();
-        $(".third .third-bgWrap").fadeIn();
-        $(".main-bot").fadeOut();
-        /* trigger iphone scroll */
-            // let addUp = ($("body").height() - height * 2) / 1500;
+
+        screen = 3;
+      
         if(scroll > lastScrollTop) {
             /* scroll down */
             if(backgroundPos < 100) {
@@ -37,27 +25,10 @@ function /* Control scroll show view */ viewControl() {
         }
         $(".third .wrapper .iphoneX .iphoneX-screen").css("background-position-y", backgroundPos + "%")
         
-        /* show tooltip for screen < 700 project-content*/
-        if(window.innerWidth <= 700) {
-            if(tooltipShowed == 0) {
-                $(".project-content").mouseover();
-                setInterval(()=>{
-                    $(".project-content").mouseleave();
-                },2000);
-                tooltipShowed = 1;
-            }
-        }
        
     } else if/* second screen */(scroll >= height) {
-        $(".third .wrapper").css("opacity", "0");
-
-        $(".scroll").addClass("d-scroll");
-        $("canvas").css("display","block");
-        $(".first").css("z-index", "-1")
-        $(".third").css("z-index","1");
-        $(".second").css("z-index","2");
-        $(".third .third-bgWrap").fadeOut();
-        $(".third .wrapper .description").fadeOut();
+        screen = 2;
+     
         if(height - scroll < -900) {
             $(".moon").css({
                 transform: "translateY(" + (height - scroll)*1.5 +  "px) translateX(-50%)"
@@ -75,13 +46,12 @@ function /* Control scroll show view */ viewControl() {
     } else if (scroll > height*.7) {
         /* if just little bit passed first */ 
         $(".first").css("z-index","0");
-    } else if /*first screen */ (scroll < height) {
-        $(".first").css("z-index","2");
-        $(".second").css("z-index","1");
-        $(".third").css("z-index","1");
 
+    } else if /*first screen */ (scroll < height) {
+        screen = 1;
     }
     lastScrollTop = scroll;
+    showScreen(screen);
 }
 
 (function() /* intial view control */{
