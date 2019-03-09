@@ -6,7 +6,6 @@ function /* Control scroll show view */ viewControl() {
     var scroll = $(window).scrollTop();
     var height = window.innerHeight;
     let moonscroll;
-    var city = 4*height - scroll;
     moonscroll = (-window.innerHeight + scroll*1.2);
  
     if /* fourth screen */ (scroll >= height*3.5) {
@@ -27,9 +26,6 @@ function /* Control scroll show view */ viewControl() {
         $(".fourth .wrapper .description").fadeIn();
         $(".third .third-bgWrap").fadeIn();
         $(".fourth .fourth-bgWrap").fadeIn();
-        if(scroll <= 4*height) {
-            $(".fourth-bgWrap").css("transform", "translateY(" + city +"px)");
-        }
 
     } else if /* third screen */(scroll >= height * 2) {
         // $(".menu").css("opacity","1")
@@ -46,7 +42,7 @@ function /* Control scroll show view */ viewControl() {
         $(".first").css("z-index", "-1");
         $(".third").css("z-index","2");
         $("section:not('.third') .wrapper").fadeOut();
-        $(".fourth .fourth-bgWrap").fadeOut();
+        $(".fourth .fourth-bgWrap").fadeIn();
 
         $(".third .wrapper").fadeIn();
 

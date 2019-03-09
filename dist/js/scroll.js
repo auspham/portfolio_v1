@@ -54,6 +54,7 @@ function cloudFly() {
     var height = window.innerHeight;
     var cloud = height-scroll;
     var bgcloud = 3*height - scroll;
+    var city = 3.5*height - scroll;
 
     $(".cloud").css("display", "block");
     if(scroll < height) {
@@ -71,9 +72,13 @@ function cloudFly() {
         $(".cloud4").css("transform","translateY(" + cloud*1.2 + "px)");
         $(".cloud5").css("transform","translateY(" + cloud*.8 + "px)");
         $(".cloud6").css("transform","translateY(" + cloud*1.4 + "px)");
-        if (scroll <= height * 7 && bgcloud > -300) {
+        if (scroll <= height * 7 && bgcloud > -200) {
             $(".third-bgWrap").css("transform","translateY(" + bgcloud + "px)");
+            if(scroll <= 4*height) {
+                $(".fourth-bgWrap").css("transform", "translateY(" + city*.7 +"px)");
+            }
         }
+        
 
     } else {
         cloud = 0;
