@@ -1,3 +1,4 @@
+window.__forceSmoothScrollPolyfill__ = true;
 document.onreadystatechange = function(e)
 {
   if(document.readyState=="interactive")
@@ -43,13 +44,18 @@ function setUpScreen(screen) {
     var height = window.innerHeight;
     switch (screen) {
         case 1:
-            window.scrollTo(0,0);
+            // window.scroll(0,0);
+            window.scroll({top: 0, left: 0, behavior: "smooth"})
             break;
         case 2:
-            window.scrollTo(0,height);
+            // window.scrollTo(0,height);
+            window.scroll({top: height, left: 0, behavior: "smooth"})
+
             break;
         case 3:
-            window.scrollTo(0,height*2);
+            // window.scrollTo(0,height*2);
+            window.scroll({top: height*2, left: 0, behavior: "smooth"})
+
             break;
 
     }

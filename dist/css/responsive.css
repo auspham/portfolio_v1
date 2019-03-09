@@ -328,7 +328,8 @@
         height: 30px;
     }
     section .wrapper .description div.viewsource-btn div.info-btn {
-        width: 326px;
+        /* width: 326px; */
+        width: calc(100% - 300px);
         float: right;
     }
     div.scroll {
