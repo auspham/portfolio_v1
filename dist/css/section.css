@@ -365,27 +365,14 @@ section div.wrapper div.description div.viewsource-btn div.info-btn a:hover{
 
 
 @supports (-ms-ime-align:auto)  {
-    section .wrapper .description .viewsource-btn {
-        width: 150%;
-    }
-    section .wrapper .description .viewsource-btn .info-btn {
-        width: 90%;
+    section.third .wrapper div.page-switcher{
+        top: 0;
+        margin: 2em auto;
     }
 
-    section .wrapper .description h4.viewsource {
-        width: 204px;
-    }
-    section .wrapper .description div.viewsource-btn div.info-btn .av-container:nth-child(2) h4.viewsource{
-        width: 120px;
-    }
 
     @media (max-width: 700px) {
-        section .wrapper .description .viewsource-btn .info-btn {
-            float: inherit;
-            overflow: hidden;
-            width: 376px;
-            margin: 0 auto;
-        }
+
         div.main {
             width: 299px;
         }
@@ -395,13 +382,7 @@ section div.wrapper div.description div.viewsource-btn div.info-btn a:hover{
         section.second .wrapper h4, section div.wrapper h4 {
             width: 100%;
         }
-        section .wrapper .description h4.viewsource {
-            width: 166px;
-        }
-        section .wrapper .description h4.viewsource:nth-child(2) {
-            width: 118px;
-            float: left;
-        }
+
         section.third .wrapper div.page-switcher{
             width: 168px;
         }
@@ -411,27 +392,13 @@ section div.wrapper div.description div.viewsource-btn div.info-btn a:hover{
     }
 }
 @-moz-document url-prefix() {
-    section .wrapper .description .viewsource-btn {
-        width: 150%;
-    }
-    section .wrapper .description .viewsource-btn .info-btn {
-        width: 90%;
-    }
-
-    section .wrapper .description h4.viewsource {
-        width: 204px;
-    }
-    section .wrapper .description div.viewsource-btn div.info-btn .av-container:nth-child(2) h4.viewsource{
-        width: 120px;
+    section.third .wrapper div.page-switcher{
+        top: 0;
+        margin: 2em auto;
     }
 
     @media (max-width: 700px) {
-        section .wrapper .description .viewsource-btn .info-btn {
-            float: inherit;
-            overflow: hidden;
-            width: 376px;
-            margin: 0 auto;
-        }
+
         div.main {
             width: 299px;
         }
@@ -442,13 +409,6 @@ section div.wrapper div.description div.viewsource-btn div.info-btn a:hover{
             width: 100%;
         }
 
-        section .wrapper .description h4.viewsource {
-            width: 166px;
-        }
-        section .wrapper .description h4.viewsource:nth-child(2) {
-            width: 118px;
-            float: left;
-        }
         section.third .wrapper div.page-switcher{
             width: 168px;
         }
