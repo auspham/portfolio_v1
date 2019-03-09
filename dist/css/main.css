@@ -199,7 +199,6 @@ button.btn-contact:focus, button.btn-contact:active{
 }
 
 .btn:focus{
-    box-shadow: none!important;
     background: rgba(0,0,0,.075);
 }
 @-moz-keyframes bounceX {

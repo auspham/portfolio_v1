@@ -42,9 +42,14 @@ section .wrapper .btn-eclipse {
     font-size: 1.5em;
     margin-top: 1.5em;
     background: #fff;
+    box-shadow: 0 5px 0 #00000021;
     float:left;
 }
 
+section .wrapper .btn-eclipse:hover{
+    box-shadow: 0 3px 0 #00000021;
+
+}
 section .wrapper h4 {
     font-weight: 300;
     width: 500px;
@@ -237,6 +242,7 @@ section .wrapper .description .viewsource-btn {
     /* width: 150%; */
     width: 683px;
     overflow: hidden;
+    padding-bottom: 2px;
 }
 section .wrapper .description .viewsource-btn .info-btn {
     /* width: 90%; */
