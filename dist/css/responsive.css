@@ -84,7 +84,7 @@
     }
 
     section.second, section.third {
-        padding: 5em 15em!important;
+        /* padding: 5em 15em!important; */
     }
 
     section .wrapper .description {
@@ -144,7 +144,7 @@
     
 
 }
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 900px) {
     .main {
         transform: scale(.8)
     }
@@ -172,6 +172,10 @@
     div.right-scroll {
         right: 4em!important;
         opacity: .6;
+    }
+
+    section:not(.first) {
+        padding: 5em 20em;
     }
 }
 @media (max-width: 1304px) and (max-height: 800px) {

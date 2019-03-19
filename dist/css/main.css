@@ -96,7 +96,7 @@ button.btn-contact:focus, button.btn-contact:active{
     height: 698px;
     display: block;
     margin: 0 auto;
-    background-size: 607px;
+    background-size: auto 100%;
     z-index: 0;
 }
 
